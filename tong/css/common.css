@@ -1,0 +1,18 @@
+
+*{margin:0; padding:0;}
+ul,li,ol {list-style-type:none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+a{text-decoration:none; cursor:pointer;}
+i{ font-style:normal;}
+img{ border:none; width:100%; height:auto!important;}
+html{font-size:100px;-webkit-tap-highlight-color: transparent;height:100%;min-width:320px;overflow-x:hidden;overflow-y:scroll;}
+.clear{ clear:both; zoom:0;}
+input[type="submit"],input[type="reset"],input[type="button"],button{-webkit-appearance:none;}
+body{ font-size:0.14rem;font-family:"Microsoft Yahei"; color:#000;height:100%;}
+.left{float:left;}
+.right{float:right;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{ background-color:#f0f0f0}

@@ -1,0 +1,615 @@
+.new-center-person,.investment-infor-ok{
+	margin-top: 144px;
+}
+
+.personal-left-list-20,.personal-right-list-20{
+	display: inline-block;
+	float: left;
+	width: 21.5%;
+	overflow: hidden;
+	background-color: #fff;
+}
+.personal-right-list-20{
+	position: relative;
+	width: 76%;
+	margin-left:10px;
+	min-height: 520px;
+	margin-bottom:30px; 
+}
+.personal-left-list-20 h2{
+	display: inline-block;
+    width: 272px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #43b3db;
+}
+.personal-left-list-20 .list_wrap h3{
+	padding-left:50px;
+}
+.yaoqingCard-title20{
+	text-align: center;
+	margin-top: 100px;
+	color:#5e5e5e;
+}
+.yaoqingCard-number20{
+	width: 264px;
+	height: 121px;
+	color: #fff;
+	font-size: 20px;
+	font-weight: bold;
+	text-align: center;
+	line-height: 121px;
+	margin: 40px auto 0 auto;
+	border-radius: 5px;
+	background:url(../../src/image/yaoqingCard-bg.jpg) no-repeat center;
+	background-size: contain;
+}
+.myvoucher h2,.Loan-application h2,.investment-infor-ok-title h2,.recharge-new h2,.borrowing-notes h2{
+	display: inline-block;
+	width: 166px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 2px solid #17a2d5;
+}
+.myvoucher .title{
+	width: 76%;
+	height: 36px;
+	line-height: 36px;
+	margin-top: 10px;
+	border-bottom:1px solid #e1e1e1;
+}
+.myvoucher .title span{
+	display: inline-block;
+	width: 50%;
+	text-align: center;
+	height: 36px;
+	line-height: 36px;
+	cursor: pointer;
+	color: #888888;
+	    font-size: 14.01px;
+}
+.click-activite{
+	color: #17a2d5 !important;
+}
+.myvoucher-left,.myvoucher-right{
+	width: 76%;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.myvoucher-container li{
+	position: relative;
+	display: inline-block;
+	width: 208px;
+	height: 188px;
+	margin: 20px 0 0 22px;
+	background-color: #f8f8f8;
+	overflow:hidden;
+}
+.myvoucher-container-bg{
+	display: inline-block;
+	width: 210px;
+	height: 80px;
+	background:url(/Public/Jxd/image/myvoucher-bg.jpg) no-repeat center;
+	background-size: cover;
+	font-size: 12px;
+	color: #fff;
+}
+.myvocher-title,.myvoucher-yuan,.myvoucher-content{
+	text-align: center;
+}
+.myvocher-title{
+	font-size: 22px;
+	margin-top: 18px;
+}
+.myvoucher-yuan{
+	font-size: 22px;
+}
+.myvoucher-limit{
+	display: inline-block;
+	width: 208px;
+	padding-left: 5px;
+	font-size: 10px;
+	color: #666666;
+	margin-top: 14px;
+}
+#Pagination-one{
+	text-align: center;
+	margin-top: 48px;
+	margin-bottom: 30px	
+}
+#Pagination-two{
+	margin-top: 28px;
+	text-align: center;
+}
+.myvoucher-flag{
+	display: none;
+	position: absolute;
+    right: 0;
+    top: 112px;
+	width: 50px;
+	height: 50px;
+	background: url(/Public/Jxd/image/myvoucher-flag.png) no-repeat center;
+	background-size: contain;
+}
+.myvoucher-container{
+	margin-top: 20px;
+}
+#Pagination{
+	margin-bottom: 30px;
+}
+
+.recharge-new{
+	height: 400px;
+	margin-bottom: 30px;
+}
+.recharge-new input{
+	text-align: center;
+}
+.Addbank-item-infor-data .recharge-new-view{
+	width: 300px;
+	display: inline-block;
+	text-align: center;
+	color: #1f9dd0;
+}
+.recharge-new .Addbank-item-infor-name{
+	color: #5e5e5e;
+}
+.recharge-new  li{
+	position: relative;
+}
+.recharge-new-yuan{
+	position: absolute;
+	bottom: 4px;
+	right: 10px;
+}
+.recharge-new .Addbank-form{
+	height: 250px;
+}
+.recharge-new .Addbank-form ul{
+	height: 157px;
+}
+.recharge-new-note{
+	text-align: center;
+	color: #ff552d;
+	font-size: 12px;
+}
+.personal-center-question-rel{
+	position: relative;
+}
+.personal-center-question-icon{
+	display: block;
+	position: absolute;
+	top: 44px;
+    right: 68px;
+	width: 18px;
+	height: 18px;
+	background: url(/Public/Jxd/image/personal-center-question-icon.jpg) no-repeat center;
+	background-size: contain;
+}
+
+.smrz_yrz-new .Addbank-item-infor-name{
+	color: #999999;
+
+}
+.smrz_yrz-new .recharge-new-view{
+	color: #666666;
+	text-align: left;
+
+}
+.smrz_yrz-new>p{
+	margin:40px 0 0 73px;
+}
+.smrz_yrz-new ul{
+	height: 200px;
+}
+.smrz_yrz-new .Addbank-form{
+	margin-top: 20px
+}
+.yaoqingcard-alert{
+	position: fixed;
+	top:0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	background-color: rgba(0,0,0,0.6);
+}
+.yaoqingcard-alert>div{
+	position: absolute;
+	width: 608px;
+	height: 336px;
+	top: 50%;
+	left: 50%;
+	color: #5e5e5e;
+	margin: -168px 0 0 -304px;
+	background-color: #fff;
+}
+.yaoqingcard-alert h5{
+	width: 400px;
+	height: 50px;
+	line-height: 50px;
+	text-align: center;
+	margin: 10px auto;
+	border-bottom: 2px solid #17a2d5;
+}
+.yaoqingcard-alert p{
+	width: 100%;
+	text-align: center;
+}
+.yaoqingcard-alert-title{
+	margin-top: 40px;
+}
+.yaoqingcard-note,.yaoqingcard-num{
+	margin-top: 10px;
+}
+.yaoqingcard-num{
+	font-weight: bold;
+	margin-top: 30px;
+	font-size: 18px;
+}
+.yaoqingcard-alert-view{
+	display: block;
+	    width: 174px;
+    height: 21px;
+    line-height: 21px;
+	text-align: center;
+	border-radius: 5px;
+	margin:40px auto;
+	color: #fff;
+	font-size: 16px;
+	background-color: #17a2d5
+}
+.yaoqingCardaddinfor{
+	height: 200px;
+	width: 510px;
+	margin-top: 20px;
+}
+.yaoqingCardaddinfor ul{
+	height: 200px;
+}
+.yaoqingCardaddinfo input{
+	text-align: center;
+}
+.borrowing-list li {
+    width: 11.11111%;
+    float: left;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+}
+.borrowing-list .borrowing-list-s {
+	line-height: 22px;
+	padding-top: 6px;
+}
+.borrowing-list{
+	width: 100%;
+	background-color: #17a2d5;
+	margin-top: 20px;
+}
+.borrowing-list-item  li {
+	position: relative;
+    display: block;
+        width: 11.11111%;
+    float: left;
+    height: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+    border-bottom: 1px dashed #cccccc;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.borrowing-list-item  .chedai-nuderline{
+	text-decoration: underline;
+}
+.borrowing-list-item p{
+	position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%	;
+    margin: auto;
+    display: table;
+    text-align: center;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.chedai-list{
+	width: 100%;
+    background-color: #17a2d5;
+    margin-top: 20px;
+}
+
+
+.chedai-list li {
+    width: 11.1111111%;
+    float: left;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    line-height: 50px;
+    color: #ffffff;
+}
+.chedai-list-item li {
+    position: relative;
+    display: block;
+    width: 11.1111111%;
+    float: left;
+    height: 60px;
+    font-size: 14px;
+    text-align: center;
+    color: #666666;
+    border-bottom: 1px dashed #cccccc;
+    box-sizing: border-box;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.personal-left-list-20 .item_cont{
+    padding-left: 50px;
+}
+.borrowing-notes .Capital-view-1{
+	position: relative;
+    height: 75px;
+}
+.borrowing-notes .Capital-view-1 a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 204px;
+    margin-top: -48px;
+    display: block;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #17a2d5;
+}
+.Capital-view-1 .postal {
+    margin-top: -8px !important;
+}
+.captial-view20 i{
+	top: 41px;
+    right: 82px;
+}
+.investment-infor-ok-title{
+	border-bottom: 1px solid #cccccc;
+}
+.investment-infor-ok .projects-infor{
+	display: block;
+	width: 280px;
+	height: 35px;
+	line-height: 35px;
+	text-align: center;
+	border-bottom: 1px dashed #cccccc;
+}
+.investment-infor-ok-list{
+	width: 100%;
+	list-style: none;
+}
+.investment-infor-ok-list li{
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	padding: 0 153px;
+	box-sizing: border-box;
+	border-bottom: 1px dashed #cccccc;
+}
+.investment-infor-ok-list li span:first-of-type{
+	display: inline-block;
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	text-align: left;
+}
+.font-bg{
+	color: #17a2d5 !important;
+}
+.font-bg-coffor{
+	color: #f85a40 !important;
+}
+.investment-infor-portal{
+	text-align: center;
+	margin-top: 22px;
+	font-size: 14px;
+}
+.investment-infor-portal input{
+	display: inline-block;
+	margin-right: 5px;
+}
+.investment-infor-btn{
+	width: 134px;
+    height: 26px;
+    line-height: 26px;
+}
+.investment-infor-ok-two{
+	margin-top:20px;
+	padding: 8px 0;
+	margin-bottom: 40px;
+}
+#investment-infor-ok-alert{
+	width: 658px;
+	height: 588px;
+	margin: -294px 0 0 -329px;
+}
+#investment-infor-ok-alert h5{
+	width: 90%;
+	height: 59px;
+    line-height: 24px;
+	font-size:16px;
+	text-align: center;
+}
+.investment-infor-contain{
+	width: 90%;
+	margin:20px auto;
+}
+.investment-infor-ok-tip{
+	text-align: center;
+	margin-top:24px;
+}
+.investment-inforaddinfor{
+	width: 400px;
+}
+.investment-infor-alert-title{
+	text-align:left !important;
+}
+.investment-inforaddinfor, .investment-inforaddinfor ul {
+    width: 389px;
+    height: 191px;
+    margin: 5px auto 0 auto;
+}
+.investment-infor-alert-view{
+	display: inline-block;
+	margin:40px 0 0 42px;
+}
+.investment-infor-alert-note{
+	display: block;
+	margin:50px auto;
+	width: 90%;
+	font-size: 12px;
+}
+.myvoucher-ThreeTab .title section{
+	width: 76%;
+}
+.myvoucher-ThreeTab .title span{
+	width: 30%;
+}
+.myvoucher-page-1,.myvoucher-page-2,.myvoucher-page-3,.myvoucher-ThreeTab .title{
+	width: 100%
+}
+.myvoucher-page-3,.myvoucher-page-2{
+	display: none;
+}
+.myvoucher-ThreeTab .myvoucher-flag-btn{
+	width: 72px;
+	height: 16px;
+	line-height: 16px;
+	color: #fff;
+	margin:20px auto 0 44px;
+	background-color: #01cccc
+}
+.myvoucher-ThreeTab .myvoucher-flag-guoqi{
+	position: absolute;
+	display: block;
+	top: 70px;
+    right: -3px;
+	width: 44px;
+	height: 20px;
+	background: url(/Public/Jxd/image/myvoucher-seal.png) no-repeat center;
+	background-size: cover;
+
+}
+.myvoucher-ThreeTab .gray {
+	background: url(/Public/Jxd/image/myvoucher-bg.png) no-repeat center;
+    background-size: cover;
+}
+.Investmentrecord20-alert>h5{
+	border-bottom: none !important;
+}
+.Investmentrecord20-alert{
+	height: 460px !important;
+	margin-top: -237px !important;
+}
+.Investmentrecord20-alert-con{
+	width: 80%;
+	margin: 0 auto;
+}
+.Investmentrecord20-alert-title{
+	list-style:none;
+	border-bottom:1px solid #bababa;
+	border-top:1px solid #bababa;
+	margin-top: 20px;
+	background-color: #ebebeb;
+}
+.Investmentrecord20-alert-title li,.Investmentrecord20-alert-list li{
+	width: 20%;
+	float: left;
+	height: 40px;
+	font-size: 14px;
+	line-height: 40px;
+	text-align: center;
+}
+.Investmentrecord20-alert-list{
+	background-color: #fff;
+	border-bottom:1px solid #bababa;
+}
+.Investmentrecord20-alert-list .font-alert-list{
+	color: #f66110 !important;
+}
+.Capital-container {
+    height: 800px !important;
+}
+#personal-center-alert{
+	width: 80%;
+	margin:40px auto 0 auto;
+}
+#personal-center-alert p{
+	color: #898989;
+	text-align: left;
+	text-indent: 33px;
+}
+.chedai-list-item li,.borrowing-list-item li{
+	line-height: 60px;
+}
+.chedai-list-item-first{
+	line-height: normal !important;
+	padding-top:30px; 
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+.borrowing-list-item-first p{
+	line-height: normal !important;
+	padding:10px 0; 
+	box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+.myvoucher-ThreeTab-icon{
+	position: absolute;
+	right: 207px;
+    top: 40px;
+	font-size: 12px;
+	color: #888888;
+}
+.myvoucher-ThreeTab-alert{
+	height: 577px !important;
+}
+.myvoucher-ThreeTab-alert p{
+	text-align: left;
+	/*padding: 0 50px;*/
+	margin-bottom: 20px;
+	color: #919191;
+	font-size: 14px;
+}
+.myvoucher-ThreeTab-alert .Investmentrecord20-alert-con{
+	width: 85%;
+	margin: 10px auto;
+}
+.myvoucher-ThreeTab-icon i{
+	width: 14px;
+    height: 14px;
+	top: 0px;
+    right: 51px;
+    background: url(/Public/Jxd/image/myvoucher-ThreeTab-icon.jpg) no-repeat center;
+    background-size: cover;
+}
+.myvoucher-ThreeTab-alert-list li,.myvoucher-ThreeTab-alert-title li{
+	width: 16.666666%;
+	color: #919191
+}
+.con-invest-left-font{
+	color: #666666;
+}
+
+/**/
+.djq-box{width:605px;height:240px; overflow-y:scroll;}
+.djq-btn1{width: 123px;height: 21px;line-height: 21px;text-align: center;background-color:#fff;font-size:16px;color: #888; border:1px solid #e1e1e1; display: inline-block;margin: 40px 0 0px 20px; }
+.djq-btn2{width: 110px;height: 21px;line-height: 21px;text-align: center;background-color:#17a2d5;font-size:16px;color: #fff;display: inline-block;margin: 40px 0 0px 20px;}

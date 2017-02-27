@@ -1,0 +1,95 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>首页</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+	<meta name="format-detection" content="telphone=no, email=no"/>
+<script type="text/javascript"  src="js/jquery.js"></script>
+<script src="js/resize.js"></script>
+<script src="js/yu.js"></script>
+<!--选项卡向下显示-->
+<script>
+
+    $(function () {
+        $(".YU_bp_child").toggle(function () {
+        	$(this).next().show();
+            $(this).find(".uouo").css('background-image', ' url(images/xxia.png)');
+			$(this).find("span").css("color","#313131");
+        }, function () {
+            $(this).find(".uouo").css('background-image', 'url(images/xyou.png)')
+			$(this).find("span").css("color","#0986e0");
+			$(this).next().hide();
+        })
+        $(".YU_bp_child1 a").toggle(function(){
+        	$(this).css({"color":"#0986e0","borderColor":"#0986e0"});
+        },function(){
+        	$(this).css({"color":"#313131","borderColor":"#313131"});
+        })
+    })
+</script>
+<!--选项卡向下显示end-->
+<link rel="stylesheet" href="css/common.css"/>
+<link rel="stylesheet" href="css/yu.css"/>
+</head>
+<body >
+ <div class="guayu">标签</div>
+ <ul class="YU_biaoqian">
+  <li class="YU_bp_child">
+  <b class="uouo"></b>
+  <span>雇主标签</span>
+  
+  </li> 
+  <li class="YU_bp_child1"><a>要实地调查</a>
+  <a>要核销取证</a><a>要转让债权</a><a>要诉讼</a><a>催房贷</a><a>催车贷</a><a>信用卡</a><a>催消费贷</a><a>催企业贷</a><a>催个人贷</a>
+  </li>
+ </ul>   
+ 
+
+ <ul class="YU_biaoqian">
+  <li class="YU_bp_child">
+   <b class="uouo"></b>
+  <span>催收圈标签</span>
+ 
+  </li> 
+  <li class="YU_bp_child1"><a>查找专家</a>
+  <a>能上门</a><a>能找车</a><a>能扣车</a><a>有工商税务资源</a><a>有法院资源</a><a>有公安资源</a><a>有征信大数据</a><a>有交通出行大数据</a><a>有房产大数据</a><a>有车主大数据</a><a>有互联网大数据</a><a>谈判专家</a><a>专业调查经验</a><a>催收公司从业</a><a>资产评估处置经验</a><a>擅长信用卡</a><a>擅长车贷</a><a>擅长小贷P2P</a><a>擅长民间债权</a><a>擅长企业债权</a>
+  </li>
+ </ul> 
+ 
+ 
+ <ul class="YU_biaoqian">
+  <li class="YU_bp_child">
+    <b class="uouo"></b>
+  <span>律师标签</span>
+
+  </li> 
+  <li class="YU_bp_child1"><a>债务纠纷诉讼</a>
+  <a>信用卡诉讼</a> <a>擅长法律文书</a> <a>资产保全诉讼</a>
+  </li>
+ </ul> 
+ 
+ <ul class="YU_biaoqian">
+  <li class="YU_bp_child">
+  <b class="uouo"></b>
+  <span>公检法司标签</span>
+  
+  </li> 
+  <li class="YU_bp_child1"><a>受理信用卡诈骗报案</a>
+  <a>受理金融犯罪报案</a>
+  </li>
+ </ul> 
+  
+  <ul class="YU_biaoqian">
+  <li class="YU_bp_child">
+   <b class="uouo"></b>
+  <span>客户代理标签</span>
+  </li> 
+  <li class="YU_bp_child1"><a>P2P公司人脉</a>
+  <a>国有银行人脉</a>
+    <a>股份制银行人脉</a>
+      <a>消费金融公司人脉</a>
+  </li>
+ </ul> 
+ 
+</body>
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>好友信息</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telphone=no, email=no"/>
+<script src="../js/resize.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/shen.css">
+</head>
+<body>
+ <div class="main">
+ 	<div class="user-box user-top" id="friend-top">
+    	<h3 class="about-h2"><a class="about-a1"><img src="../images/common1.png"></a>好友信息<a class="about-a2"><img src="../images/common3.png"></a></h3>
+        <a class="user-photo"><img src="../images/user-img.jpg"></a>
+        <div class="user-details">
+        	<p class="user-details-p1">张三<a class="details-tips">已认证</a>|<span class="details-span">北京市</span></p>
+            <p class="user-details-p2">标签：<a>大数据</a><a>催债</a><a>公安资源</a></p>
+        </div>
+    </div>   
+ 	<div class="user-box user-con">
+    	<ul class="user-ul">
+        	<li><p><img src="../images/uesr-ico11.png" class="ico-l">备注<a>催收公司张凯<img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p><img src="../images/uesr-ico12.png" class="ico-l">行业<a>催收</a></p></li>
+            <li><p><img src="../images/uesr-ico13.png" class="ico-l">职业资格<a>高级催收师</a></p></li>
+            <li><p><img src="../images/uesr-ico14.png" class="ico-l">靠谱度<a id="kaopu">
+            <img src="../images/xingxing.png">
+            <img src="../images/xingxing.png">
+            <img src="../images/xingxing.png">
+            <img src="../images/xingji-h.png">
+            <img src="../images/xingji-h.png"></a></p></li>
+            <li><p style="border:none;"><img src="../images/uesr-ico15.png" class="ico-l">成交<a>67 单</a></p></li>
+        </ul>
+    </div> 
+    <div class="user-box friend-con">
+    	<h3 class="friend-h3"><img src="../images/uesr-ico17.jpg">个人介绍</h3>
+    	<p class="friend-p">本人借款170000元，借款用于公司资金周转。本人在北京市东城区经营一家工程建筑有限公司，公司发展本人借款170000元，借款用于公司资金周转。本人在北京市东城区经营一家工程建筑有限公司，公司发展。</p>
+    </div> 
+ </div>
+ <script src="../js/jquery-1.7.1.min.js"></script>
+    <script>
+    	$(document).ready(function(e) {
+            $('.user-ul').find('li').mousedown(function(){
+				$(this).css('background','#e6e6e6');
+			});
+			$('.user-ul').find('li').mouseleave(function(){
+				$(this).css('background','#fff');
+			});
+        });
+    </script>
+</body>
+</html>

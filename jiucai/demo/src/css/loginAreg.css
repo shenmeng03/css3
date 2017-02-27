@@ -1,0 +1,176 @@
+/***登录***/
+#login-bg,#register-bg{
+    background-color: #f5f5f5;
+}
+#footer{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    z-index: 9998;
+}
+.login-css{
+    height: 750px;
+    margin-top: 144px;
+}
+.login-css{
+	
+}
+.login-infor-collected{
+   /** width: 405px;
+    height: 352px;
+    margin: 197px auto 0  auto;
+    background-color: #FFFFFF;**/
+	width: 605px;
+    height: 352px;
+    padding: 20px 100px;
+    box-sizing: border-box;
+    margin: 197px auto 0 auto;
+    background-color: #FFFFFF;
+}
+.login-infor-collected h1{
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    font-size: 16px;
+    color: #5e5e5e;
+    border-bottom: 2px solid #17a2d5;
+}
+.login-infor-collected ul{
+    width: 100%;
+    height: 126px;
+    margin: 20px 0 0 0;
+    padding:  0 10px;
+    list-style: none;
+    box-sizing: border-box;
+}
+.login-infor-collected ul li{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+.login-item-infor-name{
+    display: inline-block;
+    width: 115px;
+    height: 60px;
+    line-height: 85px;
+    text-align: left;
+    color: #999999;
+    padding-left: 24px;
+    box-sizing: border-box;
+}
+.login-item-infor-data{
+    float: right;
+    width: 270px;
+    height: 60px;
+    padding-top: 32px;
+    box-sizing: border-box;
+}
+.login-item-infor-data input{
+    border: none;
+    outline: none;
+    width: 278px;
+}
+.login-submit-bnt{
+    display: block;
+    width: 200px;
+    height: 33px;
+    line-height: 33px;
+    text-align: center;
+    background-color: #17a2d5;
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+    margin: 30px auto 0 auto;
+}
+.login-submit-bnt:hover{
+    color: white;
+    font-size: 16px;
+    font-weight: 700;
+}
+.login-quickly-btn{
+    width: 100%;
+    height: 20px;
+    margin-top: 35px;
+    line-height: 20px;
+}
+.login-quickly-btn a{
+    color: #17a2d5;
+    font-size: 14px;
+}
+/**注册样式****/
+.Register-css{
+	height:505px;
+}
+.Register-css ul{
+    height: 245px;
+    background-color: #FFFFFF;
+}
+.register-test-btn-container{
+    position: relative;
+}
+.register-test-btn{
+    position: absolute;
+    display: block;
+    top: 50%;
+    right: 0px;
+    width: 106px;
+    height: 36px;
+    margin-top: -11px;
+    line-height: 36px;
+    text-align: center;
+    border-radius: 6px;
+    color: white;
+    font-weight: 600;
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #17a2d5;
+
+}
+.register-arrgen-rule{
+    position: relative;
+    width: 100%;
+    height: 20px;
+    left: 10px;
+    top: 10px;
+    line-height: 20px;
+    padding-left: 24px;
+    color: #252c24;
+    box-sizing: border-box;
+    font-size: 14px;
+}
+.register-arrgen-rule span,.RecommendPerson .login-quickly-btn a{
+    color: #ff552d;
+}
+.register-arrgen-rule input[type=checkbox]{
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    color: #17a2d5;
+}
+.register-arrgen-link{
+    color: #252c24!important;
+}
+/***推荐人***/
+.RecommendPerson{
+	height:343px;
+}
+.RecommendPerson ul{
+    height: 68px;
+}
+.RecommendPerson .register-arrgen-rule{
+    padding-left: 0;
+    font-size: 12px;
+}
+.RecommendPerson .login-quickly-btn{
+    text-align: center;
+    color: #1f9dd0;
+}
+/**密码找回****/
+.Newfoundpass{
+	height: 430px;
+}

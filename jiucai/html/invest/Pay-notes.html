@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>充值记录</title>
+	<link rel="stylesheet" href="../../src/css/common.css"/>
+	<link rel="stylesheet" href="../../src/css/base.css"/>
+	<link rel="stylesheet" href="../../src/css/invest.css"/>
+	<link rel="stylesheet" href="../../src/css/pagination.css"/>
+	<link rel="stylesheet" href="../../src/css/Sidebar.css"/>
+	<style>
+		.puc-alert{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0,0,0,0.5);
+			z-index: 9999;
+
+		}
+		.puc-alert .puc-content{
+			position: absolute;
+			top: 180px;
+			left: 0;
+			right: 0;
+			margin: 0 auto;
+			width: 600px;
+			height: 400px;
+			background-color: #fff;
+			border-radius: 5px;
+			overflow: hidden;
+
+		}
+		.puc-content .pub-title{
+			position: relative;
+			width: 100%;
+			height: 60px;
+			line-height: 60px;
+			padding-left: 30px;
+			background-color: #f2f2f2;
+		}
+		.puc-content .pub-note{
+			width: 100%;
+			margin-top: 50px;
+			padding-left: 85px;
+			box-sizing: border-box;
+		}
+		.czh-sucess{
+			position: relative;
+			display: inline-block;
+			width: 92px;
+			height: 24px;
+			background:url(../../src/image/czhi-al-success.jpg) no-repeat center;
+			background-size: contain; 
+		}
+		.czh-error{
+			background:url(../../src/image/czhi-al-error.jpg) no-repeat center;
+			background-size: contain; 
+		}
+		
+		.pub-note >div{
+			margin-top: 35px;
+		}
+		.czh-sucess-note{
+			display: inline-block;
+			width: 300px;
+			height: 24px;
+			line-height: 24px;
+   			 vertical-align: super;
+			border-left: 2px solid #787878;
+			padding-left: 20px;
+			margin-left: 20px;
+			box-sizing: border-box;
+		}
+		.czh-error-note{
+			width: 370px;
+		}
+		.czh-sucess-note a{
+			text-decoration: underline;
+			color: #56aace;
+			margin-left:10px;
+		}
+		.public-close{
+			position: absolute;
+		    display: inline-block;
+		    right: 41px;
+		    top: 3px;
+		    font-size: 32px;
+		    width: 50px;
+		    height: 50px;
+		    text-align: center;
+		    line-height: 50px;
+		    cursor: pointer;
+		}
+	</style>
+</head>
+<body>
+<header id="header" >
+	<div class="container-fluid top">
+		<div class="container clear">
+			<section class="pull-left">客服热线：400-005-8181</section>
+			<section class="pull-right">
+				<p class="infor text-right">
+				<div class="head-img"></div>
+				<a href="##" class="register">免费注册</a>|<a href="##" class="login no-active">立即登录</a>
+				</p>
+			</section>
+		</div>
+	</div>
+	<div class="container bottom">
+		<h1 class="logo">财富直通车</h1>
+		<span class="title">财富直通车</span>
+		<nav class="nav pull-right">
+			<ul class="clear">
+				<li><a href="##">首页</a></li>
+				<li class="nav-active"><a href="##">我要投资</a></li>
+				<li><a href="##">安全保障</a></li>
+				<li><a href="##">新手引导</a></li>
+				<li><a href="##">关于我们</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<div class="container  personal-center">
+	<div class="personal-left-list">
+		<h2>个人中心</h2>
+		<div class="list_wrap">
+			<ul class="list">
+				<li class="item">
+					<h3 class="h3-line">账户详情</h3>
+					<ul class="item_cont" style="display:block" id="wdvip">
+						<li><a href="">实名认证</a></li>
+						<li><a href="">修改手机号</a></li>
+						<li><a href="">修改登录密码</a></li>
+						<li><a href="">设置交易密码</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<h3>资金详览</h3>
+					<ul class="item_cont" id="zjgl" style="display: none;">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>投资记录</h3>
+					<ul class="item_cont" style="display:none" id="tzgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>充值</h3>
+					<ul class="item_cont" style="display:none" id="zhgl">
+						<li><a class="silder-active" href="">充值记录</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<h3>提现</h3>
+					<ul class="item_cont" style="display:none" id="jfgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>银行卡</h3>
+					<ul class="item_cont" style="display:none" id="hdgl">
+						<li><a href="">绑定银行卡</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<h3>好友邀请</h3>
+					<ul class="item_cont" style="display:none" id="hdgl">
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="personal-right-con Pay-notes">
+		<h2>充值记录</h2>
+		
+	</div>
+</div>
+
+<div class="puc-alert">
+	<div class="puc-content">
+		<div class="pub-title">请在新打开的窗口完成充值 <span class="public-close">×</span></div>
+		<div class="pub-note">
+			<p>您在新打开的银行网银标签页面完成充值了吗？</p>
+			<div>
+				<span class="czh-sucess"></span>
+				<span class="czh-sucess-note">您可以：<a href="###">去投资</a> <a href="###">查看充值记录</a></span>
+			</div>
+			<div>
+				<span class="czh-sucess czh-error"></span>
+				<span class="czh-sucess-note czh-error-note">您可以：<a href="###">重新充值</a>&nbsp; 联系客服：400-004-8181</span>
+			</div>
+		</div>
+	</div>
+</div>
+<footer id="footer" class="container-fluid">
+	<div class="container clear">
+		<div class="footer-left">
+			<p>copyright 2015 玖信贷 jiuxindai.com All Rights Reserved</p>
+			<p>版权所有  |  承资产管理有限公司</p>
+			<p>京ICP备 13051110号-1</p>
+			<p>网络推广合作邮箱：MKT@jiuxindai.com 联系人：董经理</p>
+			<p>经营性网站备案信息北京互联网举报中心安全联盟认证可信网站诚信网</p>
+			<p>站互联网金融行业认证</p>
+		</div>
+		<div class="footer-right">
+			<img src="../../src/image/fotter-image.jpg" alt=""/>
+		</div>
+	</div>
+</footer>
+<script src="../../src/js/jquery.js"></script>
+<script src="../../src/js/rewards-list.js"></script>
+<script src="../../src/js/jquery.pagination.js"></script>
+<script src="../../src/js/pagination.js"></script>
+<script src="../../src/js/account.js"></script>
+<script>
+	$(function(){
+		$(".list h3").on('click',function(){
+			$(this).addClass('h3-line');
+			$(this).parent().siblings().find('h3').removeClass('h3-line');
+		});
+	});
+</script>
+</body>
+</html>

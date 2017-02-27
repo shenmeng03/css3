@@ -1,0 +1,30 @@
+/* CSS Document */
+body,div,ol,ul,li,dl,dt,dd,h1,h2,h3,h4,h5,h6,p,form,fieldset,legend,input{ margin:0; padding:0;}
+html {  width: 100%; font-family: 'Heiti SC', 'Microsoft YaHei'; font-size: 100px; outline: 0; -webkit-text-size-adjust:none; color:#fff;}
+body {  width:100%; margin: 0; -webkit-user-select: none; position: relative; background-color:#222335;}
+a{ color:inherit; text-decoration:none;}
+li{ list-style:none;}
+.cbr{ border-right:none;}
+
+.top{ position:relative; width:10.8rem; height:2.05rem; background-color:#1e202f;}
+.top p{ position:absolute; bottom:0.5rem; width:10.8rem; font-size:0.4rem; text-align:center; background-color:#1d1f2e;}
+.top i{ position:absolute; left:0.62rem; bottom:0.53rem; display:block; width:0.38rem; height:0.38rem; background:url(close.png) no-repeat; background-size:0.38rem 0.38rem; z-index:1; cursor:pointer;}
+.nav{ width:10.8rem; height:3.76rem; background:url(../imgs/bg.png) no-repeat; overflow:hidden; background-size:10.8rem 3.76rem;}
+.nav .nav-lt{ float:left; width:1.62rem; height:2.2rem; margin:0.65rem 0 0 0.864rem; cursor:pointer;}
+.nav .nav-lt img{ width:1.62rem; height:1.62rem;}
+.nav .nav-lt p{ text-align:center; font-size:0.3rem;}
+
+ul li{ float:left; width:1.51rem; height:1.18rem; border-right:1px solid #555666; border-bottom:1px solid #555666; font-size:0.26rem; text-align:center; line-height:1.18rem; cursor:pointer;}
+.act{ background-color:#555666; border-bottom:1px solid #0eab98;}
+.msg{ width:10.8rem; height:5.43rem; background:url(../imgs/bg_2.png) no-repeat; background-size:10.8rem 5.43rem; overflow:hidden;}
+.msg .msg-c{ width:90%; margin:0 auto; margin-top:0.4rem;}
+.msg .canvas{ cursor:pointer;}
+
+.dbs{ width:9.5rem; height:100%; margin-left:0.65rem;}
+.dbs .dbs-name{ height:1.55rem; line-height:1.55rem; font-size:0.3rem;}
+.dbs .dbs-lt{ position:relative; width:9.48rem; height:1.28rem; border:1px solid #4e4f5d; margin-bottom:0.2rem;}
+.dbs .dbs-lt p{ margin-left:1.26rem; font-size:0.28rem; line-height:1.28rem;}
+.dbs .dbs-lt p span{ float:right; margin-right:0.5rem; color:#35998d;}
+.dbs .dbs-lt .icon_1{ position:absolute; top:0.35rem; left:0.42rem; display:block; width:0.49rem; height:0.52rem; background:url(../imgs/icon_1.png) no-repeat; background-size:0.49rem 0.52rem;}
+.dbs .dbs-lt .icon_2{ position:absolute; top:0.35rem; left:0.42rem; display:block; width:0.52rem; height:0.52rem; background:url(../imgs/icon_2.png) no-repeat; background-size:0.52rem 0.52rem;}
+.dbs .dbs-lt .icon_3{ position:absolute; top:0.35rem; left:0.42rem; display:block; width:0.51rem; height:0.48rem; background:url(../imgs/icon_3.png) no-repeat; background-size:0.51rem 0.48rem;}

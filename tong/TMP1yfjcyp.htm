@@ -1,0 +1,374 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>首页</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telphone=no, email=no"/>
+<script type="text/javascript"  src="js/jquery.js"></script>
+<script src="js/resize.js"></script>
+<script src="js/yu.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<style type="text/css">
+
+.scroll{position:relative;overflow:hidden;}
+.mod_01{float:left; margin-right: 0.2rem;}
+.mod_01 img{display:block;width:100%}
+.dotModule_new{padding:0 5px;height:11px;line-height:6px;-webkit-border-radius:11px;background:rgba(45,45,45,0.5);position:absolute;bottom:5px;right:10px;z-index:11;}
+#slide_01_dot{text-align:center;margin:3px 0 0 0;}
+#slide_01_dot span{display:inline-block;margin:0 3px;width:5px;height:5px;vertical-align:middle;background:#f7f7f7;-webkit-border-radius:5px;}
+#slide_01_dot .selected{background:#66ff33;}
+
+</style>
+
+
+<link rel="stylesheet" title="对于&quot;在浏览器中预览&quot;为禁用: css/common.css"/>
+<style type="text/css">
+
+
+*{margin:0; padding:0;}
+ul,li,ol {list-style-type:none;}
+h1,h2,h3,h4,h5,h6{ font-weight:normal;}
+a{text-decoration:none; cursor:pointer;}
+i{ font-style:normal;}
+img{ border:none; width:100%; height:auto!important;}
+html{font-size:100px;-webkit-tap-highlight-color: transparent;height:100%;min-width:320px;overflow-x:hidden;overflow-y:scroll;}
+.clear{ clear:both; zoom:0;}
+input[type="submit"],input[type="reset"],input[type="button"],button{-webkit-appearance:none;}
+body{ font-size:0.14rem;font-family:"Microsoft Yahei"; color:#000;height:100%;}
+.left{float:left;}
+.right{float:right;}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+body{ background-color:#f0f0f0}
+
+</style>
+<link rel="stylesheet" title="对于&quot;在浏览器中预览&quot;为禁用: css/yu.css"/>
+<style type="text/css">
+
+.yu_had{ height:4.4rem; background-image:url(images/sy_bjt_01.png); background-size: cover; overflow:hidden; background-repeat:no-repeat; width:100%;}
+.had_chid{ margin-top: 1.5rem; overflow:hidden}
+.nav1{width:1.3rem;height:0.5rem; float:left; margin-left:0.5rem; margin-top:0.2rem}
+.nav1 p{display:block;padding-left:0.1rem;line-height:0.5rem;color:#fff; font-size:0.45rem}
+.set{background:url(images/btn_2.png) 1rem 0.2rem no-repeat; background-size:0.3rem}
+.select{background:url(images/btn_1.png) 1rem 0.2rem no-repeat; background-size:0.3rem}
+.new{width:1.3rem;position:absolute;display:none;color:#fff; font-size:0.4rem}
+.nav1 ul li{line-height:0.5rem;padding-left:0.1rem;}
+.nav1 ul li:hover{background:#CCC;color:#FFF;}
+.had_chid input{ width:5rem; height:1rem; background:url(images/sy_ssk_03.png) no-repeat; background-size: cover; float:left; margin-left:0.5rem; border:none; border-radius:0.15rem; padding-left:0.9rem; font-size:0.4rem; color:#fff; outline:medium;}
+.had_chid .fwts{ font-size:0.4rem; color:#fff; margin-top:0.2rem; float:left; margin-left:0.5rem; background:url(images/sy_fwt_03.png) no-repeat left center; background-size:0.5rem; padding:0.1rem 0 0.1rem 0.6rem}
+.Yu_dnav{ overflow:hidden;background-color:#fff;}
+.Yu_dnav li a{  display:block; width:1.6rem; height:0.8rem; float:left; background-size:1.6rem; margin-left:0.9rem; color:#3c3c3c; font-size:0.38rem; text-align:center; padding-top:1.7rem; overflow:hidden; margin-top:0.25rem;}
+.caer1 a{background:url(images/sy_tb_04.png) no-repeat;}
+.caer2 a{background:url(images/sy_tb_06.png) no-repeat;}
+.caer3 a{background:url(images/sy_tb_08.png) no-repeat;}
+.caer4 a{background:url(images/sy_tb_10.png) no-repeat;}
+.caer5 a{background:url(images/sy_tb_17.png) no-repeat;}
+.caer6 a{background:url(images/sy_tb_18.png) no-repeat;}
+.caer7 a{background:url(images/sy_tb_19.png) no-repeat;}
+.caer8 a{background:url(images/sy_tb_20.png) no-repeat;}
+.Yu_celan{ margin-top:0.4rem; width:100%; height:2.9rem}
+
+.menu{width:100%; margin-bottom:1.4rem; }
+.menuTitle{overflow:hidden;padding:0.3rem 0;}
+.menuTitle a{float:left;width:50%;height:0.5rem;line-height:0.5rem;text-align:center; font-size:0.4rem; }
+.menuTitle .currentA{background:url(images/sy_shug_05.png) 1.7rem center no-repeat;color:#3f98f5; background-size:0.07rem;}
+.menuContent{ display:none; border-bottom:0.02rem solid #dcdcdc;border-top:0.02rem solid #dcdcdc}
+.menuContent1{ display:none; border-bottom:0.02rem solid #dcdcdc;border-top:0.02rem solid #dcdcdc}
+.menuContent > li{ background-color:#fff;padding-left:6px; margin-bottom:0.4rem; }
+.menuContent1 > li{ background-color:#fff;padding-left:6px; margin-bottom:0.4rem; }
+.Yu_grxx { overflow:hidden; border-bottom:0.02rem solid #dcdcdc}
+.Yu_grxx span{ background:url(images/sy_tx_03.png) left center no-repeat  ; color:#959595; font-size:0.35rem; background-size:0.75rem;  line-height:1rem; padding:0.2rem 0 0.2rem 0.78rem;}
+.Yu_grxx i{ background-color:#20c5ae; font-size:0.34rem; color:#fff; margin-left:0.2rem; padding: 0 0.08rem; border-radius:0.05rem; }
+ .Yu_grxx b{ font-size:0.34rem; font-weight:normal; color:#9f9f9f; float:right;line-height:1rem;}
+.Yu_imagest{ margin-top:0.4rem;}
+.Yu_imagest img{ width:2.45rem; margin-right:0.2rem; }
+.Yu_maner { line-height:0.9rem}
+.Yu_maner span{font-size:0.34rem; color:#f74435; }
+.Yu_maner b{font-size:0.34rem; font-weight:normal; color:#969696; margin-left:0.3rem;}
+.Yu_neir{font-size:0.34rem; color:#636363; /*white-space:nowrap; text-overflow:ellipsis; -o-text-overflow:ellipsis; overflow:hidden; width:100%; height:2rem;*/}
+.Yu_weizh { padding:0.2rem 0}
+.Yu_weizh span{ background:url(images/sy_dw_19.png) left center no-repeat;font-size:0.34rem; color:#969696; background-size:0.36rem; padding-left:0.4rem;  }
+.Yu_weizh b{ color:#9f9f9f; float:right; font-size:0.34rem; font-weight:normal;  }
+.Yu_weizh{ overflow:hidden; line-height:0.7rem;}
+.Yu_dianpu{ overflow:hidden; padding:0.4rem 0; }
+.Yu_dianpu img{float:left; width:3.5rem}
+.Yu_sbnnb{ float:left; margin-left:0.2rem; width:6.5rem; }
+.Yu_sbnnb span{font-size:0.35rem; color:#636363; display:block; height:2rem; line-height:200%;}
+.Yu_sbnnb i{ color:#FFF; background-color:#adadad; margin-right:0.2rem; font-size:0.25rem; border-radius:0.05rem; padding:0.05rem;}
+.Yu_sbnnb b{font-size:0.34rem; color:#9f9f9f; font-weight:normal; display:block; margin-left:3.5rem; }
+
+/*.yu_synav{ }
+.yu_synav li{ float:left; width:25%;height:1.4rem; }
+.oxa1{ width:100%;height:1.4rem;background:url(../images/YU_SNAV_03.png ) no-repeat center; background-size:0.85rem; display:block;}
+.oxa2{ width:100%;height:1.4rem;background:url(../images/YU_SNAV_05.png ) no-repeat center; background-size:0.85rem; display:block;}
+.oxa3{ width:100%;height:1.4rem;background:url(../images/YU_SNAV_07.png ) no-repeat center; background-size:0.85rem; display:block;}
+.oxa4{ width:100%;height:1.4rem;background:url(../images/YU_SNAV_09.png ) no-repeat center; background-size:0.85rem; display:block;}
+.abc .oxa1{background:url(../images/YU_SNAV_031.png ) no-repeat center; background-size:0.85rem;width:100%;height:1.4rem;display:block;}
+.abc .oxa2{background:url(../images/YU_SNAV_051.png ) no-repeat center; background-size:0.85rem;width:100%;height:1.4rem;display:block;}
+.abc .oxa3{background:url(../images/YU_SNAV_071.png ) no-repeat center; background-size:0.85rem;width:100%;height:1.4rem;display:block;}
+.abc .oxa4{background:url(../images/YU_SNAV_091.png ) no-repeat center; background-size:0.85rem;width:100%;height:1.4rem;display:block;}*/
+
+
+.nav-bottom {
+	overflow:hidden; background-color:#fff;position:fixed; bottom:0; left:0;height:1.4rem; width:100%; border-top:0.02rem solid #dcdcdc;
+}
+
+.nav-bottom div {
+	width: 25%;
+	height:1.4rem;
+	float: left;
+
+}
+
+.nav-bottom .nav-item>a {
+	display: block;
+	width: 100%;
+	height: 1.4rem;
+	
+
+	
+}
+
+
+
+
+.nav-bottom-tab1{
+	background: url("images/YU_SNAV_03.png") no-repeat center;
+	background-size: 0.85rem;
+}
+.nav-bottom-tab2{
+	background: url("images/YU_SNAV_05.png") no-repeat center;
+	background-size:0.85rem;
+}
+.nav-bottom-tab3{
+	background: url("images/YU_SNAV_07.png") no-repeat center;
+	background-size: 0.85rem;
+}
+.nav-bottom-tab4{
+	background: url("images/YU_SNAV_09.png") no-repeat center;
+	background-size: 0.85rem;
+}
+.pb-tab-sel .nav-bottom-tab1{
+	background: url("images/YU_SNAV_031.png") no-repeat center;
+	background-size: 0.85rem;
+}
+.pb-tab-sel .nav-bottom-tab2{
+	background: url("images/YU_SNAV_051.png") no-repeat center;
+	background-size: 0.85rem;
+}
+.pb-tab-sel .nav-bottom-tab3{
+	background: url("images/YU_SNAV_071.png") no-repeat center;
+	background-size: 0.85rem;
+}
+.pb-tab-sel .nav-bottom-tab4{
+	background: url("images/YU_SNAV_091.png") no-repeat center;
+	background-size: 0.85rem;
+}
+/*悬赏列表页*/
+.zhanwei{ height:1.4rem;}
+.xslb_header{ height:1.4rem; line-height:1.4rem; color:#fff; text-align:center; font-size:0.6rem; background-color:#232323; position:relative; position:fixed; top:0; left:0; width:100%; z-index:999;}
+.xslb_weiz{ width:0.6rem; display:block; position:absolute; left:0.2rem; top:50%; margin-top:-0.6rem;}
+.xslb_soso{ width:0.45rem; display:block;position:absolute; right:0.25rem; top:50%; margin-top:-0.6rem;}
+
+.menu1{width:100%; margin-bottom:1.4rem; }
+.menuTitle1{overflow:hidden;padding:0.3rem 0; background-color:#fff; margin-bottom:0.4rem;}
+.menuTitle1 a{float:left;width:33%;height:0.5rem;line-height:0.5rem;text-align:center; font-size:0.4rem; border-right:0.02rem solid #dcdcdc;}
+.menuTitle1 a:last-child{border-right: none;}
+.menuTitle1 .currentA1{color:#3f98f5; }
+
+
+
+
+
+
+
+.guayu{ background-color:#242424; height:1.4rem; font-size:0.6rem; color:#fff; text-align:center; line-height:1.4rem}
+.YU_biaoqian{border-bottom:0.03rem solid #ebebeb; padding:0.3rem 0; }
+.YU_bp_child{ overflow:hidden; }
+.YU_bp_child span{ font-size:0.55rem; color:#313131; border-bottom:0.03rem solid #ebebeb; line-height:200% ; margin-left:0.5rem;}
+.YU_bp_child b{ background-image:url(images/xyou.png); display:block; background-repeat:no-repeat; width:0.4rem; height:0.4rem; background-size: contain; float:right; margin-top:0.3rem; margin-right:0.5rem;}
+.YU_bp_child1{ margin-top:0.3rem; display:none; overflow:hidden; }
+.YU_bp_child1 a{ border:0.03rem solid #d7d7d7; color:#6f6d6e; font-size:0.4rem; padding:0.1rem; border-radius:0.5rem; margin: 0.1rem 0.3rem; float:left;}
+
+
+
+
+
+
+
+
+
+
+</style>
+</head>
+<body>
+ <div class="yu_had">
+   <div class="had_chid">
+     <div class="nav1" id="nav1">
+	  <p class="set">地区</p>
+	   <ul class="new">
+		<li>丰台</li>
+		<li>朝阳</li>
+		
+		<li>海淀</li>
+		
+	  </ul>
+     </div>
+     <input type="text" placeholder="搜索">
+      <p class="fwts">发委托</p>
+   </div>
+ </div>     
+   
+  <ul class="Yu_dnav">
+     <li class="caer1"><a href="#">找车任务</a></li>
+     <li class="caer2"><a href="#">扣车任务</a></li>
+     <li class="caer3"><a href="#">找房任务</a></li>
+     <li class="caer4"><a href="#">上门任务</a></li>
+     <li class="caer5"><a href="#">法律资讯</a></li>
+     <li class="caer6"><a href="#">找车</a></li>
+     <li class="caer7"><a href="#">找车</a></li>
+     <li class="caer8"><a href="#">分类</a></li>
+  </ul> 
+      
+  
+     <img class="Yu_celan" src="images/sy_banner_02.png">
+     
+     <div class="menu">
+	<div class="menuTitle">
+    	<a class="currentA">推荐任务</a>
+        <a>推荐店铺</a>
+    </div>
+    <ul class="menuContent" style="display:block;">
+    	<li id="li">
+          <p class="Yu_grxx"><span>王二麻子</span> <i>置</i><i>顶</i><b>5天后截止</b></p>
+          <div class="scroll">
+	          <ul class="Yu_imagest slide_01" id="slide_01">
+	          	<li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+				<li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+	            <li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+	            <li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+	            <li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+	            <li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+	            <li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+	            <li class="mod_01"><img src="images/sy_image_15.jpg" ></li>
+	          </ul>
+          	<div class="dotModule_new" style="display: none;">
+				<div id="slide_01_dot"></div>
+			</div>
+          </div>
+       <p class="Yu_maner"><span>¥ 1500</span><b>上门催收借款</b></p>
+       <p class="Yu_neir">本人借款170000元，借款用于公司资金周转。本人在北京市东城区经营一家工程建筑有限公司，公司发展...</p>
+       <p class="Yu_weizh"><span><a>北京</a>｜<a>大兴</a></span><b>2016-6-8    16:30</b></p>
+        </li>
+        <li id="li">
+          <p class="Yu_grxx"><span>王二麻子</span> <i>置</i><i>顶</i><b>5天后截止</b></p>
+           <p class="Yu_imagest"><img src="images/sy_image_15.jpg"><img src="images/sy_image_15.jpg"><img src="images/sy_image_15.jpg"><img src="images/sy_image_15.jpg"></p>
+       <p class="Yu_maner"><span>¥ 1500</span><b>上门催收借款</b></p>
+       <p class="Yu_neir">本人借款170000元，借款用于公司资金周转。本人在北京市东城区经营一家工程建筑有限公司，公司发展...</p>
+       <p class="Yu_weizh"><span><a>北京</a>｜<a>大兴</a></span><b>2016-6-8    16:30</b></p>
+        </li>
+        <li id="li">
+          <p class="Yu_grxx"><span>王二麻子</span> <i>置</i><i>顶</i><b>5天后截止</b></p>
+           <p class="Yu_imagest"><img src="images/sy_image_15.jpg"><img src="images/sy_image_15.jpg"><img src="images/sy_image_15.jpg"><img src="images/sy_image_15.jpg"></p>
+       <p class="Yu_maner"><span>¥ 1500</span><b>上门催收借款</b></p>
+       <p class="Yu_neir">本人借款170000元，借款用于公司资金周转。本人在北京市东城区经营一家工程建筑有限公司，公司发展...</p>
+       <p class="Yu_weizh"><span><a>北京</a>｜<a>大兴</a></span><b>2016-6-8    16:30</b></p>
+        </li>
+        
+    </ul>
+    <ul class="menuContent" >
+
+          <li class="Yu_dianpu">
+            <img src="images/sy_img_03.png" >
+             <h3 class="Yu_sbnnb">
+               <span>【讨债公司】，借款用于公司资金周转。本
+人在北京市东城区经营一家工程…</span><br>
+
+                <i>大数据 </i><i>  催债</i><i> 公安资源</i><br>
+               <b> <a>北京</a>｜<a>已成交45 单</a></b>
+             </h3>
+     
+        </li>
+        
+          <li class="Yu_dianpu">
+            <img src="images/sy_img_03.png" >
+             <h3 class="Yu_sbnnb">
+               <span>【讨债公司】，借款用于公司资金周转。本
+人在北京市东城区经营一家工程…</span><br>
+
+                <i>大数据 </i><i>  催债</i><i> 公安资源</i><br>
+                <b><a>北京</a>｜<a>已成交45 单</a></b>
+             </h3>
+     
+        </li>
+        
+        
+          <li class="Yu_dianpu">
+            <img src="images/sy_img_03.png" >
+             <h3 class="Yu_sbnnb">
+               <span>【讨债公司】，借款用于公司资金周转。本
+人在北京市东城区经营一家工程…</span><br>
+
+                <i>大数据 </i><i>  催债</i><i> 公安资源</i>
+                <br>
+                <b><a>北京</a>｜<a>已成交45 单</a></b>
+             </h3>
+     
+        </li>
+        
+          <li class="Yu_dianpu">
+            <img src="images/sy_img_03.png" >
+             <h3 class="Yu_sbnnb">
+               <span>【讨债公司】，借款用于公司资金周转。本
+人在北京市东城区经营一家工程…</span><br>
+
+                <i>大数据 </i><i>  催债</i><i> 公安资源</i><br>
+                <b><a>北京</a>｜<a>已成交45 单</a></b>
+             </h3>
+     
+        </li>
+    </ul>
+</div>
+<div style="height:0.4rem; background-color:#f0f0f0"></div>
+	<div class="nav-bottom clear">
+		<div class="nav-item pb-tab pb-tab-sel">
+			<a href="index.html" class="pb-tab-bg nav-bottom-tab1"></a>
+			
+		</div>
+		<div class="nav-item pb-tab">
+			<a href="xslb.html" class="pb-tab-bg nav-bottom-tab2"></a>
+			
+		</div>
+		<div class="nav-item pb-tab">
+			<a href="xiaoxi.html" class="pb-tab-bg nav-bottom-tab3"></a>
+			
+		</div>
+		<div class="nav-item pb-tab">
+			<a href="html/userCenter.html"class="pb-tab-bg nav-bottom-tab4"></a>
+			
+		</div>
+</body>
+</html>
+<script type="text/javascript">
+var w=$(window).width();
+var p=$('#li').css('paddingLeft');
+	p=parseInt(p);
+var s=(w - p*5)/4;
+	$('.mod_01').width(s);
+if(document.getElementById("slide_01")){
+	var slide_01 = new ScrollPic();
+	slide_01.scrollContId   = "slide_01"; //内容容器ID
+	slide_01.dotListId      = "slide_01_dot";//点列表ID
+	slide_01.dotOnClassName = "selected";
+	slide_01.arrLeftId      = "sl_left"; //左箭头ID
+	slide_01.arrRightId     = "sl_right";//右箭头ID
+	slide_01.frameWidth     = w;
+	slide_01.pageWidth      = w;
+	slide_01.upright        = false;
+	slide_01.speed          = 100;
+	slide_01.space          = 300; 
+	slide_01.initialize(); //初始化
+}
+</script>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>资讯</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telphone=no, email=no"/>
+<script src="js/resize.js"></script>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/shen.css">
+</head>
+<body>
+ <div class="main" style="padding-bottom:0.8rem;">
+ <h3 class="about-h2"><a class="about-a1"><img src="images/common1.png"></a>资讯</h3>
+    <div class="zixun-con">
+    	<div class="zixun-left left">
+        	<img src="images/zixun.jpg">
+            <p>资讯<br><span>2016-08-14</span></p>
+        </div>
+    	<div class="zixun-right left">
+        	<a>全线布局移动端，ＡPP即将闪耀出世！</a>
+            <p>成立于2013互联网金融元年的玖信贷，在历经两年的金融洗牌后，固定投资用户稳超10万，一流的风控保障体系以及金牌的资产管理模式已是业界口碑……</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+    <div class="zixun-con">
+    	<div class="zixun-left left">
+        	<img src="images/zixun.jpg">
+            <p>资讯<br><span>2016-08-14</span></p>
+        </div>
+    	<div class="zixun-right left">
+        	<a>全线布局移动端，ＡPP即将闪耀出世！</a>
+            <p>成立于2013互联网金融元年的玖信贷，在历经两年的金融洗牌后，固定投资用户稳超10万，一流的风控保障体系以及金牌的资产管理模式已是业界口碑……</p>
+        </div>
+        <div class="clear"></div>
+    </div>
+ </div>
+<script src="js/jquery.js"></script>
+<script>
+var clientWidth =document.body.clientWidth;
+var lengt=$('.con-img-ul').find('li').length;
+var li_width=$('.con-img-ul').find('li').width();
+var li_margin=80;
+if (clientWidth){
+	w=(li_width+li_margin)*lengt*clientWidth / 1080;
+}
+$('.con-img-ul').width(Math.ceil(w));
+$('.con-imgbox').scrollLeft(w);
+</script>
+</body>
+</html>

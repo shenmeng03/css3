@@ -1,0 +1,1286 @@
+/***确认投资样式***/
+.established-invest,.setPasssuccess{
+    
+    margin-top: 144px;
+}
+.setPasssuccess{
+    height: 766px;
+    margin-top: 144px;
+}
+.established-invest h2{
+    font-weight: bold;
+}
+.established-invest >div{
+    width: 100%;
+}
+.established-projects-infor{
+   
+	background:#fff; margin-top:20px;
+}
+.established-projects-infor h2,.established-invest-infor h2,.established-invest-rewards h2,.Capital-view-3 h2,.Debts-alert h2,.Pay-notes h2{
+    width: 145px;
+    height: 58px;
+    line-height: 58px;
+    color: #17a2d5;
+    text-align: center;
+    border-bottom: 2px solid #17a2d5;
+}
+.established-invest-infor h2{ float:left;}
+.established-projects-infor .title,.established-invest-infor .title{
+    position: relative;
+    display: block;
+    width: 100%;
+    height:40px;
+    border-top: 1px solid #71b7d1;
+	background:#8bd0ea;
+	color:#fff;
+}
+.established-projects-infor .projects-infor,.established-invest-infor .projects-infor{
+    display:block;
+    width: 280px;
+    height: 36px;
+    line-height: 36px;
+    color: #61b7de;
+    font-size: 14px;
+    text-align: center;
+    border-bottom:1px dashed #cccccc;
+}
+.projects-correctly{
+	float:right;
+	margin-right:109px;
+    
+    line-height: 36px;
+}
+.projects-correctly span{ font-size:14px; margin-left:30px;  padding-left: 14px; background:url(../image/invst-list.jpg) 0 no-repeat;}
+.established-projects-infor .projects-infor{ float:left; margin-left:113px; text-align:left; color:#fff;}
+
+/*.projects-correctly:after,.projects-correctly2:after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-top: -5px;
+    margin-left: -85px;
+    background-color: #17a2d5;
+    left: 50%;
+    top: 50%;
+
+}*/
+.established-projects-infor .content{
+    width:790px; margin:0px auto;
+   padding-bottom: 20px;
+  height: 65px;
+    padding-top: 25px;
+}
+.established-projects-infor .content span{
+    display: block;
+    float: left;
+    width:25%;
+    height:60px;
+	text-align:center;
+	line-height:180%;
+    box-sizing: border-box;
+}
+.established-projects-infor .content span.line{ border-left:1px solid #e3e3e3;}
+.established-projects-infor .content p{
+    text-align: center;
+    font-size: 12px;
+	color:#5e5e5e;
+}
+/***改****/
+.established-projects-infor .content span:first-of-type{
+    padding-right: 0;
+}
+.established-projects-infor .content span:first-of-type p{
+    text-align: center;
+	color:#5e5e5e;
+}
+.project-b{ font-size:12px; }
+.established-projects-infor p.year-gains{
+     font-size:24px; color:#5e5e5e;
+}
+.established-projects-infor p.invest-limit{
+	font-size:24px; color:#17a2d5;
+}
+.established-invest-infor .title span{display: block;    
+    height: 40px;
+	width:350px;
+    line-height: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #8bd0ea;}
+.established-invest-infor .title span.title-span1{float: left; text-indent: 119px;}
+.established-invest-infor .title span.title-span2{float: right; padding-right: 109px; text-align:right;}
+.established-p{ float:left; font-size:12px; color:#5e5e5e; padding-top:23px; margin-left:300px;}
+.infor-con{ width:580px; margin:30px auto;}
+.infor-con p{ float:left;text-align:center;color:#5e5e5e;}
+.infor-con-p1,.infor-con-p2{ width:170px;line-height:180%; font-size:12px; }
+.infor-con-p1{ width:210px;}
+.infor-con p:first-child{ border-right:1px solid #e3e3e3;}
+.infor-con-p1 span{ color:#17a2d5; font-size:24px; font-weight:bold;}
+.infor-con-p1 b{ font-size:12px;}
+.infor-con-p2 span{font-size:24px; font-weight:bold;}
+.infor-con-p3{ font-size:14px;line-height: 47px;}
+
+.established-projects-infor .invest-limit span
+{
+    color: #17a2d5;
+    font-size: 16px;
+    font-weight: bold;
+}
+.established-invest-infor .projects-infor{
+    width: 450px;
+    color: #5e5e5e;
+}
+
+.projects-correctly2{
+    margin-left: -100px;
+}
+.established-invest-infor{
+    height: 214px;
+	background:#fff;
+	margin-top:30px;
+}
+
+.established-invest-rewards{
+    /*height: 400px;*/
+	background:#fff;
+	margin-top:30px;
+}
+.established-invest-rewards form{ padding:30px 0;}
+.established-invest-rewards .rewards-title{
+    width: 100%;
+    height: 40px;
+    border-top: 1px solid #71b7d1;
+}
+.established-invest-rewards .rewards-title span{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    font-size: 14px;
+    color: #FFFFFF;
+    background-color: #8bd0ea;
+}
+.established-invest-rewards .rewards-list{
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+.rewards-list li{
+    display: block;
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+	border-bottom:1px dashed #cccccc;
+}
+.rewards-list li:last-child{ border:none;}
+.rewards-list li span{
+    display: block;
+    float: left;
+    width: 25%;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+    font-size: 14px;
+    border-bottom:1px dashed #cccccc;
+}
+.established-invest-rewards form{
+    width:490px;
+    height: 55px;
+    line-height: 55px;
+    margin:0 auto;
+}
+.established-invest-rewards input{
+    display: inline-block;
+    width: 260px;
+    height: 38px;line-height: 38px;
+    vertical-align: top;
+    border-radius: 4px;
+    outline: none;
+    padding-left: 6px;
+	border:2px solid #a5d8ec;
+}
+.established-invest-rewards .submit{
+    width: 160px;
+    height: 38px;
+    line-height: 38px;
+    color: #ffffff;
+    background-color: #17a2d5;
+    vertical-align: top;
+	margin-left:40px;
+	padding:0;
+}
+.personal-right-con{
+    padding-left: 20px;
+}
+.personal-right-con h2{
+    width: 166px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    border-bottom: 2px solid #17a2d5;
+}
+.personal-right-con .txjl-plan{
+    display: block;
+    width: 800px;
+    height: 50px;
+    margin: 35px auto 0 auto;
+    list-style: none;
+}
+.personal-right-con .txjl-plan-bg,.personal-right-con .chzjl-plan-bg{
+    background-color: #17a2d5;
+}
+.personal-right-con .txjl-plan li{
+    width: 9.0909%;
+    float: left;
+    height: 50px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+    color: #ffffff;
+    /*line-height: 50px;*/
+}
+.personal-right-con .txjl-plan li.tzjl-li{ padding-top: 15px;  height: 41px;}
+
+/***分页样式***/
+.personal-right-con .data-page{
+    display: block;
+    width: 800px;
+    height: 660px;
+    margin: 0px auto 0 auto;
+}
+#Searchresult{
+    width:100%;
+    height:610px;
+}
+#Pagination{
+    width: auto;
+    margin: 5px auto 0 auto;
+    text-align: center;
+}
+.data-page .txjl-plan{
+    margin-top: 0;
+}
+.data-page .txjl-plan li{
+    padding-top: 8px;
+    height: 60px;
+    color: #666666;
+    border-bottom: 1px dashed #cccccc;
+    box-sizing: border-box;
+}
+.data-page .txjl-plan li:not(:first-of-type){
+    padding-top: 17px;
+}
+.data-page .font-bg{
+    color: #1f9dd0 !important;
+    cursor: pointer;
+}
+.data-page .reviewed{
+    color: #666666 !important;
+    cursor: default !important;
+}
+/***资金详览样式***/
+.Capital-container{
+    height: 1000px !important;
+}
+.Capital-view,.Capital-view .Capital-page{
+    height: 920px !important;
+}
+
+.Capital-view .result{
+    width: 908px;
+    height: 920px;
+    padding-left: 20px;
+    box-sizing: border-box;
+}
+.Capital-view .result h2{
+    width: 145px;
+    height: 58px;
+    line-height: 58px;
+    color: #17a2d5;
+    text-align: center;
+    border-bottom: 2px solid #17a2d5;
+}
+.Capital-view .Capital-view-1{
+    position: relative;
+    height: 75px;
+}
+.Capital-view .Capital-view-1 a{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-left: 204px;
+    margin-top: -42px;
+    display: block;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 5px;
+    color: white;
+    background-color: #17a2d5;
+}
+.Capital-view-1 .postal{
+    margin-top: -2px !important;
+}
+.Capital-view-1 .Capital-max,.Capital-view-1 .Capital-note{
+    text-align: center;
+}
+.Capital-max{
+    font-size: 30px;
+    color: #17a2d5;
+}
+.Capital-note{
+    font-size: 14px;
+    color: #666666;
+}
+.Capital-view-1 .Capital-postal-bg{
+    background-color: #cccccc !important;
+}
+.Capital-view-2{
+    position: relative;
+    margin-top: 30px;
+    width: 100%;
+    height: 80px;
+    padding-bottom: 60px;border-bottom: 1px solid #cccccc;
+
+}
+.Capital-view-2 .boder-line{
+    height: 110px;
+
+}
+.Capital-view-2 .boder-line>div{
+    width: 33.33333%;
+    height: 80px;
+    float: left;
+    box-sizing: border-box;
+    border-right: 1px solid #cccccc;
+}
+.Capital-view-2 div:last-of-type{
+    border-right: none;
+}
+.Capital-view-2 h3,.Capital-view-2 p{
+    text-align: center;
+    color: #989898;
+    font-size: 14px;
+}
+.Capital-view-2 h3{
+    padding-top: 10px;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+.Capital-view-3{
+    width: 100%;
+    height: 280px;
+}
+.Capital-view-3 .boder-line>div{
+    width: 50%;
+}
+.Capital-view-4{
+    width: 100%;
+    height: 240px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.Capital-view-4 .Capital-list{
+    width: 800px;
+    height: 200px;
+    margin:  0 auto;
+}
+.Capital-list .title,.Capital-list .title>div,.Capital-list ul{
+    list-style: none;
+    width: 100%;
+    height: 20px;
+}
+.Capital-list .title{
+    height: 30px;
+    line-height: 30px;
+    background-color: #f5f5f5;
+}
+.Capital-list span{
+    color: #5e5e5e;
+}
+.Capital-list .title span{
+    display: block;
+    width: 25%;
+    float: left;
+    height: 20px;
+    text-align: center;
+    line-height: 20px;
+}
+.Capital-list ul li{
+    width: 100%;
+    height: 65px;
+    border-bottom: 1px dashed #cccccc;
+}
+.Capital-list ul span{
+    padding-top: 25px;
+    display: block;
+    width: 25%;
+    float: left;
+    text-align: center;
+    height: 65px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+.Capital-list .toubiao{
+    padding-top: 6px !important;
+}
+/***债权详情 弹窗***/
+.Debts-details{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-color: rgba(0,0,0,0.5);
+}
+.Debts-alert{
+    position: absolute;
+    width: 860px;
+    height: 710px;
+    top: 144px;
+    left: 50%;
+    padding-top: 27px;
+    margin-left: -290px;
+    background-color: white;
+}
+.Debts-alert h3 span{
+    width: 20% !important;
+}
+.list_wrap .list span{
+    padding-top: 0!important;
+}
+.Debts-alert .title,.Debts-item{
+    width: 800px;
+    height: 50px;
+    margin: 20px auto 0 auto;
+    background-color: #17a2d5;
+}
+.alert-title-block{
+    margin-top: 32px;
+    width: 80%;
+    height: 50px;
+    margin: 32px auto 0 auto;
+    background-color: #17a2d5;
+}
+.alert-title-block span{
+    color: white;
+}
+.alert-title-block span,.list_wrap .list span{
+   display: block;
+    float: left;
+    width: 20%;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 5px;
+    box-sizing: border-box;
+
+}
+.alert-title-block .list_wrap_name,.alert-title-block .list_wrap_xq{
+    width: 30% !important;
+    padding-top: 13px !important;
+}
+.list_wrap .list_item_name,.list_wrap .list_item_xq{
+    width: 30% !important;
+}
+.list_wrap .list_item_xq,.list_wrap .list span{
+    padding-top: 15px;
+}
+.list_wrap .list_item_name{
+    padding-top: 5px !important;
+}
+.list_wrap .list_item_xq{
+    color: #17a2d5 !important;
+    cursor: pointer;
+}
+.list_wrap .project-name{
+    display: block;
+    width: 100%;
+    color: #17a2d5;
+    font-size: 14px;
+    margin: 4px 0;
+}
+.list_wrap .projects-con{
+    color: #888888;
+    font-size: 14px;
+}
+.Debts-alert .list_wrap .item_cont{
+    border-bottom: 1px dashed #cccccc;
+    padding-bottom: 5px;
+}
+.alert-button-con{
+    margin-top: 45px;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+}
+.Debts-alert .alert-button{
+    width: 160px;
+    height: 40px;
+    margin: 0 auto 0 auto;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: #17a2d5;
+    color: white;
+}
+/***充值记录***/
+.Pay-notes .chzjl-plan{
+    display: block;
+    width: 800px;
+    height: 50px;
+    margin: 35px auto 0 auto;
+    list-style: none;
+}
+.Pay-notes-plan ul{
+    display: block;
+    width: 100%;
+    height: 610px;
+    list-style: none;
+}
+.Pay-notes .chzjl-plan li{
+    width: 25%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+    color: #ffffff;
+}
+.Pay-notes-plan li span{
+    width: 25%;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+    text-align: center;
+    padding-top: 6px;
+    color: #666666;
+    border-bottom: 1px dashed #cccccc;
+}
+/***设置交易密码成功***/
+.setPasssuccess img{
+    position: relative;
+    top: 20%;
+    display: block;
+    width: 667px;
+    height: 117px;
+    margin: 0 auto;
+}
+.setPasssuccess-notes{
+    position: relative;
+    width: 50%;
+    left: 50%;
+    top: 24%;
+    margin-left: -25%;
+    height: 200px;
+}
+.setPasssuccess-notes p{
+    text-align: center;
+    padding: 6px 0;
+    box-sizing: border-box;
+}
+.setPasssuccess-notes a{
+    position: relative;
+    top: 30px;
+    margin-left: 160px;
+    color: #17a2d5;
+    text-decoration:underline;
+}
+/***实名认证提交成功***/
+.Certification span{
+    color: #17a2d5;
+}
+.Certification p{
+    position: relative;
+    top: 10%;
+}
+/***提现记录样式***/
+.tx-notes .reviewed{
+    color: #ff552d !important;
+}
+/***个人中心为认证样式***/
+.Person-center{
+
+}
+.qualification-infor{
+    position: relative;
+    width: 100%;
+    height: 300px;
+    padding-top: 50px;
+    box-sizing: border-box;
+}
+.qualification-image{
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    overflow: hidden;
+    text-align: center;
+}
+.qualification-image img{
+    display: block;
+    width: 100%;
+}
+.qualification-iphone{
+    text-align: center;
+    font-size: 18px;
+    color: #5e5e5e;
+    margin-top: 25px;
+}
+/**认证未通过**/
+.qualification-notes{
+    position: absolute;
+    top: 82%;
+    left: 50%;
+    margin: -12.5px 0 0 -104px;
+    display: block;
+    width: 300px;
+    height: 25px;
+    line-height: 25px;
+}
+.qualification-notes:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    margin: -12.5px 0 0 -34px;
+    background: url(../image/qualification-reminded-icon.jpg) no-repeat center;
+    background-size: cover;
+}
+.qualification-notes-success{
+    margin: -12.5px 0 0 -63px;
+}
+.qualification-notes-success:after{
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 25px;
+    height: 25px;
+    margin: -12.5px 0 0 -34px;
+    background: url(../image/qualification-reminded-success-icon.jpg) no-repeat center;
+    background-size: cover;
+}
+.qualification-notes a,.MyBank-card-alert-btn a{
+    color: #17a2d5;
+    text-decoration: underline;
+}
+.qualification-data-info{
+    width: 100%;
+    height: 170px;
+    border-top: 1px solid #cccccc;
+}
+.qualification-data-info .asset-Fall{
+    height: 160px;
+    width: 100%;padding-top: 55px;
+    box-sizing: border-box;
+}
+.qualification-data-info .asset-Fall p{
+    font-size: 30px;
+    color: #17a2d5;
+    text-align: center;
+}
+.qualification-data-info .asset-Fall p:last-of-type{
+    font-size: 14px;
+    color: #666666;
+    margin-top: 5px;
+}
+.qualification-details-info{
+    width: 100%;
+    height: 80px;
+}
+.qualification-details-info span{
+    display: block;
+    width: 33.333333%;
+    height: 80px;
+    float: left;
+    border-right: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+.qualification-details-info span:last-of-type{
+    border-right: none;
+}
+.qualification-details-info p{
+    text-align: center;
+    font-size: 24px;
+    color: #5e5e5e;
+    margin-top: 6px;
+}
+.qualification-details-info p:last-of-type{
+    font-size: 14px;
+    color: #666666;
+}
+.safe-exit{
+    position: absolute;
+    top: 18px;
+    right: 50px;
+    width: 70px;
+    height: 20px;
+    line-height: 20px;
+    text-align: center;
+    color: white;
+    font-size: 12px;
+    border-radius: 5px;
+    background-color: #17a2d5;
+}
+/****银行卡样式****/
+.Bankcard-finish,.Bankcard-ing,.Bankcard-add-btn{
+    position: relative;
+    width: 520px;
+    height: 147px;
+    border-radius: 8px;
+    background-color: #17a2d5;
+    margin: 66px auto 0 auto;
+    box-sizing: border-box;
+}
+.Bankcard-ing{
+    background-color: #ffb200;
+    margin: 12px auto 0 auto;
+}
+.Bankcard-add-btn{
+    position: relative;
+    height: 38px;
+    line-height: 38px;
+    text-align: center;
+    color: #eaf4fa;
+    background-color: #17a2d5;
+    margin: 30px auto 0 auto;
+    cursor: pointer;
+}
+.Bankcard-add-btn span{
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -22px 0 0 -75px;
+    width: 38px;
+    height: 38px;
+    font-size: 40px;
+}
+.Bankcard-left{
+    position: relative;
+    width: 174px;
+    height: 174px;
+    line-height: 174px;
+    text-align: center;
+}
+.Bankcard-left img,.Bankcard-ing img{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 80px;
+    height: 80px;
+    margin:-52px 0 0 -40px;
+}
+.Bankcard-center{
+    position: absolute;
+    top: 0;right: 0;
+    width:346px;
+    height: 147px;
+    padding: 47px 20px 47px 0;
+    box-sizing: border-box;
+}
+.Bankcard-center p{
+    width: 333px;
+    height: 36px;
+    margin: 0 auto;
+    color: white;
+    font-size: 18px;
+}
+.Bankcard-center a{
+    text-decoration:underline;
+    color: white;
+    font-size: 16px;
+    margin-right: 20px;
+}
+.Bankcard-card-delete{
+    color: #ffdba3 !important;
+}
+.Bankcard-finish-notie{
+    position: absolute;
+    top: 50%;
+    right: 20px;
+    margin-top: -10px;
+    color: white;
+}
+/***添加银行卡样式***/
+.Addbank-form{
+    position: relative;
+}
+.Addbank-form,.Addbank-form ul{
+    width: 560px;
+    height: 380px;
+    margin: 60px auto 0 auto;
+}
+.Addbank-form ul{
+    margin: 0;
+    list-style:none;
+    box-sizing: border-box;
+}
+.Addbank-form ul li{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+.Addbank-item-infor-name{
+    display: inline-block;
+    width: 155px;
+    height: 60px;
+    line-height: 85px;
+    text-align: left;
+    color: #999999;
+}
+.Addbank-form .Bank-name{
+    float: left;
+    display: inline-block;
+    width: 150px;
+    border-radius: 5px;
+}
+.Addbank-item-infor-data{
+    float: right;
+    width: 405px;
+    height: 60px;
+    padding-top: 32px;
+    box-sizing: border-box;
+}
+.Addbank-item-infor-data input{
+    border: none;
+    outline: none;
+    width: 200px;
+}
+.city select{
+    display: inline-block;
+    width: 112px;
+}
+.Addbank-form ul li:last-of-type{
+    position: relative;
+}
+.iphone-test .test-btn{
+    position: absolute;
+    top: 50%;
+    right: 56px;
+    display: block;
+    width: 95px;
+    height: 25px;
+    line-height: 25px;
+    text-align: center;
+    margin-top: -15px;
+    border-radius: 5px;
+    background-color: #17a2d5;
+    color: white;
+}
+.Addbank-form-submit{
+    position: absolute;
+    bottom: 0px;
+    left:50%;
+    display: block;
+    width: 160px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-left: -80px;
+    border-radius: 5px;
+    background-color: #17a2d5;
+    color: white;
+}
+/****日期显示的插件***/
+.personal-data-plug{
+    margin-top: 30px;
+    width: 820px;
+    height: 320px;
+}
+.personal-data-title{
+    width: 100%;
+    height: 42px;
+    line-height: 42px;
+    background-color: #17a2d5;
+}
+.personal-data-title span:first-of-type{
+    margin-left: 40px;
+}
+.personal-data-title span{
+    display: block;
+    float: left;
+    text-align: center;
+    width: 130px;
+    line-height: 42px;
+    height: 42px;
+}
+.xdsoft_datetimepicker{
+    width: 100%m !important;
+    height: 278px !important;
+    box-sizing: border-box;
+}
+.personal-data-plug input[type=button]{
+    display:none;
+}
+.personal-data-plug .xdsoft_timepicker,.personal-data-plug .xdsoft_mounthpicker{
+    display:none !important;
+}
+.xdsoft_datetimepicker,.xdsoft_datepicker{
+    width: 820px !important;
+    margin: 0 !important;
+}
+.xdsoft_calendar th,.xdsoft_calendar td{
+    width: 30px;
+    height: 30px;
+    line-height:30px;
+}
+.xdsoft_calendar td div{
+    text-align: center !important;
+    padding: 0 !important;
+    font-size: 18px;
+}
+#datetimepicker3{
+    display: none !important;
+}
+.data-title-day-mouth,.data-title-year,.data-title-ylandxq{
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+}
+.data-title-ylandxq p{
+    display: inline;
+}
+.data-title-ylandxq .lunar{
+    font-size: 14px;
+    margin-left: 14px;
+}
+/***修改手机号***/
+.RevisionsIphone{
+    height: 275px;
+}
+/******修改登录密码******/
+.Revisions-login-passd{
+    height: 339px;
+}
+/***邀请好友样式***/
+.InvitationFriend >h2{
+    display: inline-block;
+    cursor: pointer;
+}
+.InvitationFriend .no-under-line{
+    border-bottom: none;
+}
+.InvitationFriend-one{
+    margin-top: 80px;
+    width: 100%;
+    height: 650px;
+}
+.InvitationFriend-two{
+    display: none;
+    margin-top: 80px;
+    height: 865px;
+}
+.InvitationFriend-top{
+    width: 100%;
+    height: 150px;
+}
+.InvitationFriend-top span{
+    width: 40%;
+    display: block;
+    height: 150px;
+    float: left;
+    box-sizing: border-box;
+}
+.InvitationFriend-top span:first-of-type,
+.InvitationFriend-top span:last-of-type{
+    width: 30%;
+}
+.InvitationFriend-top img{
+    display: block;
+    width: 120px;
+    height: 120px;
+    margin:0 auto;
+}
+.InvitationFriend p{
+    text-align: center;
+}
+.InvitationFriend .QR_codes-font{
+    padding-top: 5px;
+    color: #5e5e5e;
+    font-size: 14px;
+    text-align: center;
+    box-sizing: border-box;
+}
+.InvitationFriend-link{
+    margin-top: 25px;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+.InvitationFriend-link-btn{
+    display: block;
+    width: 132px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;font-weight: 500;
+    color: white;
+    margin: 20px auto 0 auto;
+    background-color: #17a2d5;
+    border-radius: 6px;
+}
+.InvitationFriend-number,.InvitationFriend-number-font{
+    margin-top: 30px;
+    padding-left: 10px;
+    box-sizing: border-box;
+    color: #5e5e5e;
+    font-size: 14px;
+}
+.InvitationFriend-number-font{
+    margin-top: 20px;
+}
+.InvitationFriend-bottom{
+    margin-top: 51px;
+    padding: 0 67px;
+    height: 400px;
+    box-sizing: border-box;
+}
+.InvitationFriend-bottom h4{
+    display: block;
+    width: 90px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #17a2d5;
+    color: white;
+    font-size: 14px;
+}
+.InvitationFriend-rule-notes{
+    margin-top: 40px;
+    width: 100%;
+    height: 320px;
+    list-style: none;
+}
+.InvitationFriend-rule-notes li{
+    position: relative;
+    width: 100%;
+    height: 60px;
+    margin-bottom: 10px;
+    padding-left: 90px;
+    box-sizing: border-box;
+}
+.InvitationFriend-rule-notes li:after{
+    content: "";
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #17a2d5;
+    left: 50px;
+    top: 0;
+    margin: 5px 0 0 12px;
+}
+.InvitationFriend-infor-con{
+    width: 100%;
+    height: 84px;
+}
+.InvitationFriend-infor-con section{
+    width: 33.333333%;
+    height: 84px;
+    float: left;
+    border-right: 1px solid #cccccc;
+    box-sizing: border-box;
+}
+.InvitationFriend-infor-con section:last-of-type{
+    border-right: none;
+}
+.InvitationFriend-infor-con span{
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 22px;
+    color: #5e5e5e;
+    font-size: 24px;
+}
+.InvitationFriend-infor-con p{
+    color: #969696;
+    font-size: 14px;
+}
+.InvitationFriend-list-title{
+    width: 100%;
+    height: 40px;
+    margin-top: 80px;
+    background-color: #17a2d5;
+    box-sizing: border-box;
+}
+.InvitationFriend-list-title span{
+    display: inline-block;
+    width: 20%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+.InvitationFriend-list{
+    width: 100%;
+    height: 660px;
+}
+.InvitationFriend-list li{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px dashed #cccccc;
+}
+.InvitationFriend-list span{
+    display: block;
+    width: 20%;
+    float: left;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+    color: #666666;
+}
+.InvitationFriend-list-page{
+    width: 100%;
+    height: 680px;
+}
+.InvitationFriend-list-page-container{
+    height: 1180px!important;
+}
+.InvitationFriend-list-page #Searchresult{
+    height: 695px!important;
+}
+.InvitationFriend-list a{
+    color: #17a2d5;
+}
+.infor-alert{
+    position: absolute;
+    top:50%;
+    left:50% ;
+    width: 800px;
+    height: 510px;
+    margin: -220px 0 0 -255px;
+    background-color: white;
+}
+.infor-alert .id_name{
+    margin: 50px 0 43px 42px;
+}
+.infor-alert .infor-alert-title{
+    width: 640px;
+    height: 40px;
+    background-color: #17a2d5;
+    margin: 0 auto;
+}
+.infor-alert .infor-alert-title span{
+    display: inline-block;
+    width: 33.333333%;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+.infor-alert-title-plan li{
+    width: 100%;
+    height: 60px;
+    border-bottom: 1px dashed #cccccc;
+}
+.infor-alert-title-plan li span{
+    width: 33.333333%;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+/***邀请好友详情页***/
+.InvitationFriend-infor-alert{
+    position: fixed;
+    left: 0;
+    top: 0;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: 999999;
+}
+/****修改h2标题文字颜色**/
+.Pay-notes>h2{
+    color: #5e5e5e;
+    cursor: pointer;
+}
+/***删除银行卡提示窗**/
+.MyBank-card-alert-delet{
+    display: none;
+    position: fixed;
+    top: 0;left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999;
+    background-color: rgba(0,0,0,0.6);
+}
+.MyBank-card-alert{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 522px;
+    margin-left: -115px;
+    height: 305px;
+    margin-top: -217px;
+    background-color: white;
+    padding: 61px 116px 0 116px;
+    box-sizing: border-box;
+
+}
+.MyBank-card-alert img{
+    display: block;
+    width: 64px;
+    height: 53px;
+    margin: 0 auto 52px auto;
+}
+.MyBank-card-alert p{
+    text-align: center;
+}
+.MyBank-card-alert-btn{
+    width: 60%;
+    height: 20px;
+    margin: 38px auto;
+}
+/***邀请好友弹窗***/
+.InvitationFriend-infor-alert iframe{
+    display: inline-block;
+    width: 800px;
+    height: 510px;
+    border: 0;
+}
+.infor-alert-data-container{
+
+}
+.InvitationFriend-infor-alert-iframe{
+    position: relative;
+    width: 800px;
+    height: 510px;
+    background-color: red;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.InvitationFriend-infor-alert-iframe .infor-alert{
+    left: 0;
+    top: 0;
+    margin: 0;
+}
+.InvitationFriend-infor-alert-iframe #Pagination1{
+    height: 50px;
+}
+.InvitationFriend-infor-alert-iframe .pagination-iframe{
+    position: absolute;
+    top: 71%;
+    left: 50%;
+    margin-left: -150px !important;
+}
+.InvitationFriend-infor-alert-iframe ul{
+    width: 640px;
+    height: 300px;
+    margin: 0 auto;
+}
+.InvitationFriend-infor-alert-iframe .InvitationFriend-list span{
+    width: 33.333333%;
+
+}

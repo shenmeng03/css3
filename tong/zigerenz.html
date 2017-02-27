@@ -1,0 +1,55 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>资格认证</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telphone=no, email=no"/>
+<script src="js/resize.js"></script>
+<link rel="stylesheet" type="text/css" href="css/common.css">
+<link rel="stylesheet" type="text/css" href="css/shen.css">
+</head>
+<body>
+ <div class="main" style="padding-bottom:0.8rem;">
+ <h3 class="about-h2" style="margin-bottom:0;"><a class="about-a1"><img src="images/common1.png"></a>资格认证</h3>
+ 	
+    <div class="con-box zigerenz-con">
+    	<a class="zigerenz-a1">委托方认证</a>
+        <a class="zigerenz-a1">风控处置方认证</a>
+        <a class="zigerenz-a1">诉讼代理方认证</a>
+        <a class="zigerenz-a2">公检法司认证</a>
+        <a class="zigerenz-a2">市场代理方认证</a>
+        <a class="zigerenz-a2">其他方认证</a>
+        <div class="clear"></div>
+    </div>
+    <div class="con-box">
+    	<h3 class="con-h3">上传图片</h3>
+        <div class="con-imgbox">
+        <ul class="con-img-ul">
+        	<li><img src="images/xuanshang1.jpg"></li>
+            <li><img src="images/xuanshang1.jpg"></li>
+            <li><img src="images/xuanshang1.jpg"></li>
+            <li><img src="images/xuanshang1.jpg"></li>
+            <li><img src="images/xuanshang1.jpg"></li>
+            <li><img src="images/xuanshang1.jpg"></li>
+            <li><a class="con-a"><img src="images/xuanshang-add.jpg"></a></li>
+        </ul>
+        </div>       
+    </div>
+    <p class="zigerenz-p">请您提供有效的证件，包括但不限于个人有效工作证明文件，公司组织机构代码证，成功案例证明文件，国家有关部门办法的资格认证等。</p>
+    <a class="common-btn common-btn-b">保存</a>
+ </div>
+<script src="js/jquery.js"></script>
+<script>
+var clientWidth =document.body.clientWidth;
+var lengt=$('.con-img-ul').find('li').length;
+var li_width=$('.con-img-ul').find('li').width();
+var li_margin=80;
+if (clientWidth){
+	w=(li_width+li_margin)*lengt*clientWidth / 1080;
+}
+$('.con-img-ul').width(Math.ceil(w));
+$('.con-imgbox').scrollLeft(w);
+</script>
+
+</body>
+</html>

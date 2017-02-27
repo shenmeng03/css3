@@ -1,0 +1,36 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>关于</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telphone=no, email=no"/>
+<script src="../js/resize.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<link rel="stylesheet" type="text/css" href="../css/shen.css">
+</head>
+<body>
+ <div class="main">
+ 	<h2 class="about-h2"><a class="about-a1"><img src="../images/common1.png"></a>关于<a class="about-a2"><img src="../images/about.jpg"></a></h2>
+ 	<div class="user-box user-con">
+    	<ul class="user-ul">
+        	<li><p><img src="../images/uesr-ico8.png" class="ico-l">版本号<a>v 1.0.1</a></p></li>
+            <li><p><img src="../images/uesr-ico9.png" class="ico-l">反馈<a><img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p><img src="../images/uesr-ico10.png" class="ico-l">升级<a><img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p><img src="../images/uesr-ico18.png" class="ico-l">分享<a><img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p style="border:none;"><img src="../images/uesr-ico19.png" class="ico-l">使用帮助<a><img src="../images/common2.png" class="ico-r"></a></p></li>
+        </ul>
+    </div> 
+ </div>
+ <script src="../js/jquery-1.7.1.min.js"></script>
+    <script>
+    	$(document).ready(function(e) {
+            $('.user-ul').find('li').mousedown(function(){
+				$(this).css('background','#e6e6e6');
+			});
+			$('.user-ul').find('li').mouseleave(function(){
+				$(this).css('background','#fff');
+			});
+        });
+    </script>
+</body>
+</html>

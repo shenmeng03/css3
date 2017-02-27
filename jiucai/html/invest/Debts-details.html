@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>债权详情</title>
+	<link rel="stylesheet" href="../../src/css/common.css"/>
+	<link rel="stylesheet" href="../../src/css/base.css"/>
+	<link rel="stylesheet" href="../../src/css/invest.css"/>
+	<link rel="stylesheet" href="../../src/css/pagination.css"/>
+	<link rel="stylesheet" href="../../src/css/Sidebar.css"/>
+</head>
+<body>
+<header id="header" >
+	<div class="container-fluid top">
+		<div class="container clear">
+			<section class="pull-left">客服热线：400-005-8181</section>
+			<section class="pull-right">
+				<p class="infor text-right">
+				<div class="head-img"></div>
+				<a href="##" class="register">免费注册</a>|<a href="##" class="login no-active">立即登录</a>
+				</p>
+			</section>
+		</div>
+	</div>
+	<div class="container bottom">
+		<h1 class="logo">财富直通车</h1>
+		<span class="title">财富直通车</span>
+		<nav class="nav pull-right">
+			<ul class="clear">
+				<li><a href="##">首页</a></li>
+				<li class="nav-active"><a href="##">我要投资</a></li>
+				<li><a href="##">安全保障</a></li>
+				<li><a href="##">新手引导</a></li>
+				<li><a href="##">关于我们</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<div class="container  personal-center Capital-container">
+	<div class="personal-left-list">
+		<h2>个人中心</h2>
+		<div class="list_wrap">
+			<ul class="list">
+				<li class="item">
+					<h3 class="h3-line">账户详情</h3>
+					<ul class="item_cont" style="display:block" id="wdvip">
+						<li><a href="">实名认证</a></li>
+						<li><a href="">修改手机号</a></li>
+						<li><a href="">修改登录密码</a></li>
+						<li><a href="">设置交易密码</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<h3>资金详览</h3>
+					<ul class="item_cont" id="zjgl" style="display: none;">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>投资记录</h3>
+					<ul class="item_cont" style="display:none" id="tzgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>充值</h3>
+					<ul class="item_cont" style="display:none" id="zhgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>提现</h3>
+					<ul class="item_cont" style="display:none" id="jfgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>银行卡</h3>
+					<ul class="item_cont" style="display:none" id="hdgl">
+						<li><a href="">绑定银行卡</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<h3>好友邀请</h3>
+					<ul class="item_cont" style="display:none" id="hdgl">
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="Capital-view">
+		<!--<div class="data-page Capital-view">-->
+			<!--<div id="Searchresult" class="Capital-page">分页初始化完成后这里的内容会被替换。</div>-->
+			<!--<div id="hiddenresult" style="display:none;">-->
+				<!--&lt;!&ndash; 列表元素 &ndash;&gt;-->
+				<!--<div class="result">-->
+					<!--<h2>账户资产</h2>-->
+					<!--<div class="Capital-view-1">-->
+						<!--<p class="Capital-max">100459.08</p>-->
+						<!--<p class="Capital-note">财产总资金（元）</p>-->
+						<!--<a href="##" class="btn recharge">充值</a>-->
+						<!--<a href="##" class="btn postal Capital-postal-bg">提现</a>-->
+					<!--</div>-->
+					<!--<div class="Capital-view-2 clear">-->
+						<!--<div class="boder-line">-->
+							<!--<div>-->
+								<!--<h3>105.75</h3>-->
+								<!--<p>可用现金（元）</p>-->
+							<!--</div>-->
+							<!--<div>-->
+								<!--<h3>8000.50</h3>-->
+								<!--<p>在投金额（元）</p>-->
+							<!--</div>-->
+							<!--<div>-->
+								<!--<h3>150</h3>-->
+								<!--<p>可用代金券（元）</p>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<h2>投资收益</h2>-->
+					<!--<div class="Capital-view-3 clear">-->
+						<!--<div class="Capital-view-1">-->
+							<!--<p class="Capital-max">100459.08</p>-->
+							<!--<p class="Capital-note">财产总资金（元）</p>-->
+						<!--</div>-->
+						<!--<div class="Capital-view-2 clear">-->
+							<!--<div class="boder-line">-->
+								<!--<div>-->
+									<!--<h3>105.75</h3>-->
+									<!--<p>可用现金（元）</p>-->
+								<!--</div>-->
+								<!--<div>-->
+									<!--<h3>150</h3>-->
+									<!--<p>可用代金券（元）</p>-->
+								<!--</div>-->
+							<!--</div>-->
+						<!--</div>-->
+					<!--</div>-->
+					<!--<h2>资金明细</h2>-->
+					<!--<div class="Capital-view-4">-->
+						<!--<div class="Capital-list">-->
+							<!--<div class="title">-->
+								<!--<span>类型</span><span>操作金额(元)</span><span>交易时间</span><span>备注</span>-->
+							<!--</div>-->
+							<!--<ul>-->
+								<!--<li>-->
+									<!--<span>投标</span><span>10050</span><span>2015-12-10 17：12</span><span class="toubiao">冻结投资者的投标资金 对标[卫士计划A-2016-3-29] 包含代金券：50元 可用额：10000元</span>-->
+								<!--</li>-->
+								<!--<li>-->
+									<!--<span>注册送代金券</span><span>50</span><span>注册送代金券</span><span>注册送20元代金券</span>-->
+								<!--</li>-->
+							<!--</ul>-->
+						<!--</div>-->
+					<!--</div>-->
+				<!--</div>-->
+			<!--</div>-->
+			<!--<div id="Pagination" class="pagination">&lt;!&ndash; 这里显示分页 &ndash;&gt;</div>-->
+		<!--</div>-->
+	</div>
+</div>
+<!--债权详情弹窗-->
+<div class="Debts-details container-fluid">
+	<div class="Debts-alert">
+		<h2>资金明细</h2>
+		<div class="content">
+			<div class="alert-title-block clear">
+				<span class="list_wrap_name">债权名称</span><span>债券总额<br>（元）</span><span>分配金额<br>（元）</span><span class="list_wrap_xq">债券详情</span>
+			</div>
+			<div class="list_wrap">
+				<ul class="list">
+					<li class="item">
+						<h3 class="clear title-line">
+							<span class="list_item_name">个人车辆（丰田汉兰达）抵押 借款用于自营一家商贸公司资金周转</span><span>200,000</span><span>2000</span><span class="list_item_xq">【点击收起】</span>
+						</h3>
+						<ul class="item_cont" style="display:block" id="wdvip">
+							<li>
+								<p class="project-name">【贷款项目说明】</p>
+								<p class="projects-con">本人借款20万元，用于自营一家钢材公司资金周转。本人在济南市天桥区经营一家钢材公司。本公司是一家集钢材仓储、钢材销售、钢材运输于一体的企业。公司成立于2006年，主营螺纹钢、线材、盘螺、各种管材、板材、型材、管道配件及不锈钢类产品，均为一手货源，无任何周转环节。公司自成立以来，不断地改革与创新，先后在济南多个地方设有货场，与华北众多建筑施工企业及房地产公司建立了良好的合作关系。由于客户不断增多，市场规模不断扩大，公司急需一笔资金进行周转，由于公司自有资金不足，故需要在该平台抵押借款。借款金额20万元，期限3个月，现进行3个月债权流转，流转金额20万元，流转期限3个月，年化收益率13.2%。[债权流转方已借款给该客户，此项目为通过第三方机构的债权流转</p>
+							</li>
+							<li>
+								<p class="project-name">【个人情况说明】</p>
+								<p class="projects-con">【总体情况】：借款人1978年出生，济南市历城区人，在济南市工作和生活，并于2006年在济南市天【还款能力】：借款人主要以自己经营的钢材公司经营收入作为主要还款来源，此外还以个人车辆作为抵押物，总体来看，该借款公司还款能力较强，风险较低。</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item">
+						<h3 class="clear title-line">
+							<span class="list_item_name">个人车辆（丰田汉兰达）抵押 借款用于自营一家商贸公司资金周转</span><span>200,000</span><span>2000</span><span class="list_item_xq">【点击展开】</span>
+						</h3>
+						<ul class="item_cont" style="display:none" id="wdvip">
+							<li>
+								<p class="project-name">【贷款项目说明】</p>
+								<p class="projects-con">本人借款20万元，用于自营一家钢材公司资金周转。本人在济南市天桥区经营一家钢材公司。本公司是一家集钢材仓储、钢材销售、钢材运输于一体的企业。公司成立于2006年，主营螺纹钢、线材、盘螺、各种管材、板材、型材、管道配件及不锈钢类产品，均为一手货源，无任何周转环节。公司自成立以来，不断地改革与创新，先后在济南多个地方设有货场，与华北众多建筑施工企业及房地产公司建立了良好的合作关系。由于客户不断增多，市场规模不断扩大，公司急需一笔资金进行周转，由于公司自有资金不足，故需要在该平台抵押借款。借款金额20万元，期限3个月，现进行3个月债权流转，流转金额20万元，流转期限3个月，年化收益率13.2%。[债权流转方已借款给该客户，此项目为通过第三方机构的债权流转</p>
+							</li>
+							<li>
+								<p class="project-name">【个人情况说明】</p>
+								<p class="projects-con">【总体情况】：借款人1978年出生，济南市历城区人，在济南市工作和生活，并于2006年在济南市天【还款能力】：借款人主要以自己经营的钢材公司经营收入作为主要还款来源，此外还以个人车辆作为抵押物，总体来看，该借款公司还款能力较强，风险较低。</p>
+							</li>
+						</ul>
+					</li>
+					<li class="item">
+						<h3 class="clear title-line">
+							<span class="list_item_name">个人车辆（丰田汉兰达）抵押 借款用于自营一家商贸公司资金周转</span><span>200,000</span><span>2000</span><span class="list_item_xq">【点击展开】</span>
+						</h3>
+						<ul class="item_cont" style="display:none" id="wdvip">
+							<li>
+								<p class="project-name">【贷款项目说明】</p>
+								<p class="projects-con">本人借款20万元，用于自营一家钢材公司资金周转。本人在济南市天桥区经营一家钢材公司。本公司是一家集钢材仓储、钢材销售、钢材运输于一体的企业。公司成立于2006年，主营螺纹钢、线材、盘螺、各种管材、板材、型材、管道配件及不锈钢类产品，均为一手货源，无任何周转环节。公司自成立以来，不断地改革与创新，先后在济南多个地方设有货场，与华北众多建筑施工企业及房地产公司建立了良好的合作关系。由于客户不断增多，市场规模不断扩大，公司急需一笔资金进行周转，由于公司自有资金不足，故需要在该平台抵押借款。借款金额20万元，期限3个月，现进行3个月债权流转，流转金额20万元，流转期限3个月，年化收益率13.2%。[债权流转方已借款给该客户，此项目为通过第三方机构的债权流转</p>
+							</li>
+							<li>
+								<p class="project-name">【个人情况说明】</p>
+								<p class="projects-con">【总体情况】：借款人1978年出生，济南市历城区人，在济南市工作和生活，并于2006年在济南市天【还款能力】：借款人主要以自己经营的钢材公司经营收入作为主要还款来源，此外还以个人车辆作为抵押物，总体来看，该借款公司还款能力较强，风险较低。</p>
+							</li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+			<div class="alert-button-con">
+				<div class="btn alert-button">确认</div>
+			</div>
+		</div>
+	</div>
+</div>
+<footer id="footer" class="container-fluid">
+	<div class="container clear">
+		<div class="footer-left">
+			<p>copyright 2015 玖信贷 jiuxindai.com All Rights Reserved</p>
+			<p>版权所有  |  承资产管理有限公司</p>
+			<p>京ICP备 13051110号-1</p>
+			<p>网络推广合作邮箱：MKT@jiuxindai.com 联系人：董经理</p>
+			<p>经营性网站备案信息北京互联网举报中心安全联盟认证可信网站诚信网</p>
+			<p>站互联网金融行业认证</p>
+		</div>
+		<div class="footer-right">
+			<img src="../../src/image/fotter-image.jpg" alt=""/>
+		</div>
+	</div>
+</footer>
+<script src="../../src/js/jquery.js"></script>
+<script src="../../src/js/jquery.pagination.js"></script>
+<script src="../../src/js/pagination.js"></script>
+<script src="../../src/js/account.js"></script>
+<script>
+	$(function(){
+		$(".list h3").on('click',function(){
+			$(this).addClass('h3-line');
+			$(this).parent().siblings().find('h3').removeClass('h3-line');
+		});
+
+		$('.list_item_xq').on('click',function(){
+			if($(this).text()=="【点击收起】"){
+				$(this).text("【点击展开】");
+				console.log("--none--");
+			}else if($(this).text()=="【点击展开】"){
+				$(this).text("【点击收起】");
+				console.log("--block--");
+			}
+			var fl=$(this).parent().parent().siblings().find('.list_item_xq').text('【点击展开】');
+		});
+
+	});
+</script>
+</body>
+</html>

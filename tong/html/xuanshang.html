@@ -1,0 +1,84 @@
+<!doctype html>
+<html><head>
+<meta charset="utf-8">
+<title>发悬赏</title>
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
+<meta name="format-detection" content="telphone=no, email=no"/>
+<script src="../js/resize.js"></script>
+<link rel="stylesheet" type="text/css" href="../css/common.css">
+<!--<link rel="stylesheet" type="text/css" href="../css/swiper.min.css">-->
+<link rel="stylesheet" type="text/css" href="../css/shen.css">
+</head>
+<body>
+ <div class="main" style="padding-bottom:0.8rem;">
+ <h3 class="about-h2"><a class="about-a1"><img src="../images/common1.png"></a>发悬赏<a class="about-a2"><img src="../images/about.jpg"></a></h3>
+ 	<div class="con-box con1">
+    	<ul class="con1-ul">
+        	<li><p>目的<a>上门要钱<img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p>悬赏原因<a>到账提10个点<img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p>法律阶段<a>诉前<img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p>地区<a>北京市 东城区<img src="../images/common2.png" class="ico-r"></a></p></li>
+            <li><p style="border:none;">数量<a>5<img src="../images/common2.png" class="ico-r"></a></p></li>
+        </ul>
+    </div>
+    <div class="con-box">
+    	<h3 class="con-h3">任务要求</h3>
+        <p class="con-p">本人借款170000元，借款用于公司资金周转。本人在北京市东城区经营一家工程建筑有限公司，公司发展京市东城区经营一家工程建筑有限公司，公司发展京市东城区经</p>
+    </div>
+    <div class="con-box">
+    	<h3 class="con-h3">已知线索</h3>
+        <p class="con-p">本人借款170000元，借款用于公司资金周转。本人在北京市东城区经营一家工程建筑有限公司，公司发展京市东城区经营一家工程建筑有限公司，公司发展京市东城区经</p>
+    </div>
+    <div class="con-box">
+    	<h3 class="con-h3">相关图片</h3>
+        <div class="con-imgbox">
+        <ul class="con-img-ul">
+        	<li><img src="../images/xuanshang1.jpg"></li>
+            <li><img src="../images/xuanshang1.jpg"></li>
+            <li><img src="../images/xuanshang1.jpg"></li>
+            <li><img src="../images/xuanshang1.jpg"></li>
+            <li><img src="../images/xuanshang1.jpg"></li>
+            <li><img src="../images/xuanshang1.jpg"></li>
+            <li><a class="con-a"><img src="../images/xuanshang-add.jpg"></a></li>
+        </ul>
+        </div>
+       
+    </div>
+    <div id="save"><a class="common-btn common-btn-b" style="width:9.25rem; margin:0.2rem auto; float:none;">保存</a></div>
+ </div>
+<script src="../js/jquery.js"></script>
+<script>
+$('.con1-ul').find('li').mousedown(function(){
+	$(this).css('background','#e6e6e6');
+});
+$('.con1-ul').find('li').mouseleave(function(){
+	$(this).css('background','#fff');
+});
+var clientWidth =document.body.clientWidth;
+var lengt=$('.con-img-ul').find('li').length;
+var li_width=$('.con-img-ul').find('li').width();
+var li_margin=80;
+if (clientWidth){
+	w=(li_width+li_margin)*lengt*clientWidth / 1080;
+}
+$('.con-img-ul').width(Math.ceil(w));
+$('.con-imgbox').scrollLeft(w);
+var flag=true;
+var doc_height;
+$(window).scroll(function () {
+	if(flag){
+		doc_height= $(document).height()-10;
+		flag=false;
+	}
+	console.log(doc_height+"+++"+$(document).height());
+    if ($(document).scrollTop() + $(window).height()>=doc_height) {
+		 
+		 $('#save').css({'position':'static','background':'none','border':'none'});		
+    }else if($(document).scrollTop() + $(window).height()<doc_height){
+	   $('#save').css({'position':'fixed','background':'#fff','border-top':'1px solid #dfe0e5'});
+	}
+});
+</script>
+
+</body>
+</html>

@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+	<meta charset="UTF-8">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>个人中心(为认证)</title>
+	<link rel="stylesheet" href="../../src/css/common.css"/>
+	<link rel="stylesheet" href="../../src/css/base.css"/>
+	<link rel="stylesheet" href="../../src/css/invest.css"/>
+	<link rel="stylesheet" href="../../src/css/pagination.css"/>
+	<link rel="stylesheet" href="../../src/css/Sidebar.css"/>
+	<link rel="stylesheet" href="../../src/css/jquery.datetimepicker.css"/>
+</head>
+<body>
+<header id="header" >
+	<div class="container-fluid top">
+		<div class="container clear">
+			<section class="pull-left">客服热线：400-005-8181</section>
+			<section class="pull-right">
+				<p class="infor text-right">
+				<div class="head-img"></div>
+				<a href="##" class="register">免费注册</a>|<a href="##" class="login no-active">立即登录</a>
+				</p>
+			</section>
+		</div>
+	</div>
+	<div class="container bottom">
+		<h1 class="logo">财富直通车</h1>
+		<span class="title">财富直通车</span>
+		<nav class="nav pull-right">
+			<ul class="clear">
+				<li><a href="##">首页</a></li>
+				<li class="nav-active"><a href="##">我要投资</a></li>
+				<li><a href="##">安全保障</a></li>
+				<li><a href="##">新手引导</a></li>
+				<li><a href="##">关于我们</a></li>
+			</ul>
+		</nav>
+	</div>
+</header>
+<div class="container  personal-center Capital-container">
+	<div class="personal-left-list">
+		<h2>个人中心</h2>
+		<div class="list_wrap">
+			<ul class="list">
+				<li class="item">
+					<h3 class="h3-line silder-active">账户详情</h3>
+					<ul class="item_cont" style="display:block" id="wdvip">
+						<li><a href="">实名认证</a></li>
+						<li><a href="">修改手机号</a></li>
+						<li><a href="">修改登录密码</a></li>
+						<li><a href="">设置交易密码</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<h3>资金详览</h3>
+					<ul class="item_cont" id="zjgl" style="display: none;">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>投资记录</h3>
+					<ul class="item_cont" style="display:none" id="tzgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>充值</h3>
+					<ul class="item_cont" style="display:none" id="zhgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>提现</h3>
+					<ul class="item_cont" style="display:none" id="jfgl">
+					</ul>
+				</li>
+				<li class="item">
+					<h3>银行卡</h3>
+					<ul class="item_cont" style="display:none" id="hdgl">
+						<li><a href="">绑定银行卡</a></li>
+					</ul>
+				</li>
+				<li class="item">
+					<h3>好友邀请</h3>
+					<ul class="item_cont" style="display:none" id="hdgl">
+						<li><a href=""></a></li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<div class="personal-right-con Person-center">
+		<div class="qualification-infor">
+			<div class="qualification-image">
+				<img src="../../src/image/qualification-image.jpg" alt=""/>
+			</div>
+			<p class="qualification-iphone">15811001234</p>
+			<!--认证未通过显示-->
+			<span class="qualification-notes" >您还未进行实名认证&nbsp;&nbsp;&nbsp;&nbsp;<a href="##">去认证>>></a></span>
+			<!--认证通过显示-->
+			<span class="qualification-notes qualification-notes-success" style="display: none">您已经通过实名认证！</span>
+			<div class="safe-exit">安全退出</div>
+		</div>
+		<div class="qualification-data-info">
+			<div class="asset-Fall">
+				<p>100459.08 </p>
+				<p>财产总资金（元）</p>
+			</div>
+		</div>
+		<div class="qualification-details-info clear">
+			<span>
+				<p>105.75</p>
+				<p>累计收益（元）</p>
+			</span>
+			<span>
+				<p>8000.50</p>
+				<p>可用现金（元）</p>
+			</span>
+			<span>
+				<p>150</p>
+				<p>可用代金券（元）</p>
+			</span>
+		</div>
+		<div class="personal-data-plug">
+			<div class="personal-data-title clear">
+				<span class="data-title-day-mouth"></span>
+				<span class="data-title-ylandxq">
+					<p class="week"></p><p class="lunar"></p>
+				</span>
+				<span class="data-title-year"></span>
+			</div>
+			<input type="text" id="datetimepicker3"/>
+			<!--<input type="button" onclick="$('#datetimepicker3').datetimepicker({value:'2011/12/11 12:00'})" value="set inline value 2011/12/11 12:00"/>-->
+		</div>
+	</div>
+</div>
+<footer id="footer" class="container-fluid">
+	<div class="container clear">
+		<div class="footer-left">
+			<p>copyright 2015 玖信贷 jiuxindai.com All Rights Reserved</p>
+			<p>版权所有  |  承资产管理有限公司</p>
+			<p>京ICP备 13051110号-1</p>
+			<p>网络推广合作邮箱：MKT@jiuxindai.com 联系人：董经理</p>
+			<p>经营性网站备案信息北京互联网举报中心安全联盟认证可信网站诚信网</p>
+			<p>站互联网金融行业认证</p>
+		</div>
+		<div class="footer-right">
+			<img src="../../src/image/fotter-image.jpg" alt=""/>
+		</div>
+	</div>
+</footer>
+<script src="../../src/js/jquery.js"></script>
+<script src="../../src/js/jquery.pagination.js"></script>
+<script src="../../src/js/pagination.js"></script>
+<script src="../../src/js/account.js"></script>
+<script src="../../src/js/jquery.datetimepicker.js"></script>
+<script src="../../src/js/Dateconversion.js"></script>
+<script>
+	$(function(){
+		$(".list h3").on('click',function(){
+			$(this).addClass('h3-line');
+			$(this).parent().siblings().find('h3').removeClass('h3-line');
+		});
+		$('#datetimepicker3').datetimepicker({
+			inline:true
+		});
+		/**禁止点击事件**/
+		$('.xdsoft_datetimepicker  .xdsoft_calendar td').on('click',function(e){
+			$(this).attr('disabled',"true");
+			var e = event || window.event;
+			if (e.preventDefault)
+				e.preventDefault();
+			e.returnValue = false;
+			return false;
+		});
+		var day_plug=$('.xdsoft_today>div').text();
+		var year_plug=$('.xdsoft_year>span').text();
+		var month_plug=$('.xdsoft_month>span').text();
+		var week=weekCov(new Date().getDay());
+		var Datacov=GetLunarDay(year_plug,month_plug,day_plug);
+		$('.data-title-day-mouth').text(month_plug+"-"+day_plug);
+		$('.data-title-year').text(year_plug);
+		$('.lunar').text(GetLunarDay(year_plug,month_plug,day_plug));
+		$('.week').text("星期"+week);
+		console.log(GetLunarDay(year_plug,month_plug,day_plug));
+
+	});
+</script>
+</body>
+</html>
