@@ -1,0 +1,108 @@
+/* CSS Document */
+/*北汽新能源活动页*/
+.open-bg{ width:100%; height:100%; background:url(../image/open-bg.jpg) no-repeat; background-size:100% 100%; position:relative;}
+.open-bg p{ text-align:center; color:#ffffff; font-size:0.36rem; line-height:180%;}
+.show-con{font-size:0rem;}
+.open-p1{ padding-top:0.4rem;}
+.open-p1 img{ width:1.26rem;}
+.open-p2{ padding:2.8rem 0 1.8rem 0;}
+.open-a{ position:absolute; bottom:0.7rem; left:1.8rem; display:block; width:3.9rem; height:0.6rem; line-height:0.6rem; text-align:center; font-size:0.3rem; color:#fff; background:#c50503;}
+/*北汽留言板*/
+.bord-section{ padding:0.2rem; background:#d7d5d5;}
+.bord-p1{ font-size:0.3rem; line-height:180%;padding:0.05rem 0;}
+.line{ border-top:0.02rem solid #7d7d7d; }
+/*企业介绍*/
+.qiye-con{ width:100%; height:25%; background-size:100% 100%; text-align:center; line-height:3rem;}
+.about{ background:url(../image/qiye1.jpg) no-repeat;}
+.concept{ background:url(../image/qiye2.jpg) no-repeat;}
+.advocates{ background:url(../image/qiye3.jpg) no-repeat;}
+.partner{ background:url(../image/qiye4.jpg) no-repeat;}
+.qiye-con img{ width:2.5rem; vertical-align:middle;}
+/*关于我们*/
+.about-text{ padding:0.3rem; }
+.text-h3{ font-size:0.3rem; border-left:0.05rem solid #d1251a; padding-left:0.05rem; margin-bottom:0.2rem; }
+.about-text p{ font-size:0.26rem; line-height:180%; text-indent:2em;} 
+/*新闻资讯*/
+.new-ul li{ position:relative; border-top:2px solid #dcdcdc; padding:0.2rem;}
+.new-ul li{ display:block;}
+.new-img{ width:1.9rem; height:1.5rem; float:left;}
+.new-text{ float:right; width:5rem; margin-left:0.02rem; padding-top:0.25rem;}
+.new-title{ color:#000000; font-size:0.2rem; height:0.8rem; display:block;}
+.time-span{ font-size:0.18rem; color:#919191; display:block;}
+.new-more{ float:right; font-size:0.18rem; color:#d33127;}
+.new-more img{ width:0.18rem;}
+/*新闻资讯内容页*/
+.new-con{ padding-bottom:1.2rem;  border-top:2px solid #dcdcdc; padding:0.3rem 0.5rem; }
+.new-con h2{font-size:0.3rem; color:#1b1b1b; text-align:center;}
+.new-con h2 span{ display:block; font-size:0.18rem; color:#949494; margin:0.2rem 0 0.15rem 0;}
+.new-con img{width:100%; margin-bottom:0.15rem;}
+.new-con p{text-indent:2em; line-height:180%; font-size:0.24rem; color:#1b1b1b;}
+.new-foot{ width:100%; height:0.8rem; padding:0.1rem 0; background:#797979; position:fixed; bottom:0rem; left:0;}
+.new-foot ul li{ width:25%; float:left; text-align:center; border-left:1px solid #d6d6d6;}
+.new-foot ul li:first-child{ border:none; width:24%;}
+.new-foot ul li img{ width:1.5rem;}
+/*新闻资讯联系人*/
+.new-message{ border:1px solid #424242; margin-bottom:0.35rem;}
+.new-message h3{ font-size:0.32rem; color:#fff; line-height:0.73rem; text-indent:0.3rem; background:#424242;}
+.new-message ul{ padding:0.3rem 0.15rem;}
+.new-message ul li{ position:relative;}
+.new-message ul li p{ text-indent:0; line-height:0.65rem; font-size:0.3rem; color:#000000;}
+.new-message span{ color:#1925bc;}
+.new-message ul li img{ position:absolute; right:0.5rem; bottom:0; width:0.58rem;}
+/*注册*/
+.reg-con{  border-top:2px solid #dcdcdc; padding:0.2rem;}
+.reg-con h3{ font-size:0.24rem; color:#333333; text-align:center; line-height:180%; padding-bottom:0.2rem; border-bottom:1px solid #dcdcdc;} 
+.reg-form { padding:0 0.5rem;}
+.reg-form label{ display:block; font-size:0.3rem; color:#333; line-height:180%;}
+.reg-form input,.reg-form select,.reg-form select option{ width:100%; height:0.7rem; border:2px solid #c9d4de; border-radius:0.1rem; outline:none; background:#fff; font-size:0.3rem; text-indent:0.1rem;}
+.reg-form select{ width:100%; text-align:center;}
+.reg-form select.red{ background:#cc0000; color:#fff; border:none;}
+.ret-btn{ display:block; font-size:0.3rem; color:#fff; width:3.9rem; height:0.8rem; text-align:center; background:#c50503; border:none; margin:0.7rem auto 0;}
+/*申请购买*/
+.goumai-bg{width:100%; height:100%; background:url(../image/goumai-bg.jpg) no-repeat; background-size:100% 100%; position:relative;}
+.goumai-img{ display:block; margin:0 auto; position:relative;}
+.goumai1{ width:4.34rem; top:2rem;}
+.goumai2{ width:4.37rem; top:3.2rem;}
+.goumai3{ width:2.14rem;top:4rem;}
+@media screen and (max-width: 320px) {
+    .goumai1{ top:1rem;}
+	.goumai2{ top:2.3rem;}
+	.goumai3{ top:2.8rem;}
+
+}
+/*预约试驾*/
+.yuyue-bg{width:100%; height:100%; background:url(../image/yuyue.jpg) no-repeat; background-size:100% 100%;}
+#yuyue label{ color:#fff;}
+#yuyue input,#yuyue select,#yuyue select option{ border-radius:0;}
+#yuyue select{ background:#e60012; color:#fff; border:none;}
+#yuyue select option,.reg-form select.red option{color:#333;}
+#yuyue input.yuyue-time{ margin:0.2rem 0 0.9rem 0; text-align:center;}
+#yuyue .ret-btn,.goumai-bg .ret-btn{ position:absolute; bottom:1.2rem; left:1.8rem; background:#e60012;}
+.textarea{ line-height:21px; background:url(../image/textarear.jpg); width:6.88rem; padding:0 0.19rem; height:7.64rem; background-size:100% 100%;}
+.tijiao{ width:3.27rem; height:0.6rem; border:none; line-height:1; background:#e60012; margin:20px auto; display:block; color:#Fff}
+
+/*2016/8/8*/
+/*大事记*/
+.shiji-section{ padding-bottom:0.66rem; background:#f6f6f6;}
+.con-h3{ font-size:0.36rem; background:#1a191e; position:relative; text-align:center; line-height:0.75rem; color:#fff;}
+.con-h3 a{ display:block; position:absolute; top:0; line-height:0.75rem; font-size:0.28rem; color:#fff;}
+.con-h3 img{ vertical-align:middle;}
+.con-l img{ width:0.85rem;}
+.con-r img{ width:0.46rem; }
+.con-l{ left:0.2rem;}
+.con-r{right:0.2rem;}
+.shiji-a{ display:block; background:#f6f6f6; font-size:0; display:block; height:0.76rem; border-bottom:2px solid #dcdcdc;}
+.shiji-a img{ width:2.2rem; padding:0.1rem 0 0 0.2rem; vertical-align:middle;}
+.shiji-h5{ font-size:0.24rem; font-weight:bold; color:#333333; text-align:center; line-height:0.76rem;}
+.shiji-con{ font-size:0;}
+.shiji-con img{ padding:0; margin:0;}
+/*关于我们*/
+.about-section{ background:#eef1f8;padding-bottom:0.66rem;}
+.about-img{ display:block; margin:0.2rem auto; width:7.1rem;}
+/*员工关怀*/
+.body_bg{ background:#f6f6f4; height:100%;}
+.guanhuai-con1{padding:0.75rem 0 0.4rem 0; font-size:0;}
+.guanhuai-con2{ font-size:0; padding-bottom:1rem;}
+/*合作伙伴*/
+.hezuo-section,.hezuo-bg{ background:#f7f7f7; height:100%;}
+.hezuo-con{ font-size:0;}
