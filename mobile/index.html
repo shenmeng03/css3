@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>微信引导页</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">     
+	<meta content="yes" name="apple-mobile-web-app-capable">     
+	<meta content="black" name="apple-mobile-web-app-status-bar-style">     
+	<meta content="telephone=no" name="format-detection">
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<script src="js/resize.js"></script>
+</head>
+<style>
+	html, body {
+        position: relative;
+        height: 100%;
+        font-family: "Microsoft Yahei";
+    }
+    body {
+        background: #eee;
+        margin: 0;
+        padding: 0;
+    }
+    .swiper-container {
+        width: 100%;
+        height: 100%;
+    }
+    .swiper-slide {
+    	background: #000;
+       }
+    .Slide5{ background: url("image/con5.jpg") no-repeat; background-size: 100% 100%; }
+    .swiper-slide img{width: 100%; height: auto;}
+    .Slide5 h2{ font-size: 0; }
+    .con5-p1{ font-size: 0.26rem; line-height: 200%;  color: #fff;padding:0 0.62rem 0.5rem; margin: 0; }
+    .con5-p2{font-size: 0.22rem; color: #00d8ff; text-align: center;padding: 0; margin: 0; line-height: 1rem;}
+    .swiper-slide img.erweima{ width: 4rem; height: auto; margin: 0 auto; display: block; }
+    @media (max-width: 320px) {
+    	.con5-p1{padding:0 0.42rem 0.2rem;}
+   	}
+   	.arrowdown,.arrowtop{position:absolute; bottom: 0.1rem; left: 50%;}
+   	.arrowdown{margin-left: -0.2rem; background: url(image/up.png) no-repeat; background-size: 0.4rem 0.54rem; width: 0.4rem;height: 0.54rem; }
+   	.arrowtop{ margin-left: -0.6rem;width: 1.2rem; font-size: 0.24rem; color: #fff; text-align: center; font-style: normal;}
+   	.con-btn{
+   		animation: updown 1s ease-in-out alternate  infinite;
+  		-moz-animation: updown 1s ease-in-out alternate  infinite;
+  		-webkit-animation: updown 1s ease-in-out alternate  infinite;
+  		-o-animation: updown 1s ease-in-out alternate  infinite;
+   	}
+   	@keyframes updown{
+		0%{
+			bottom: 0.1rem;
+		}
+		100%{
+			
+			bottom: 0.25rem;
+		}
+	} 
+  @-moz-keyframes updown{
+    0%{
+      bottom: 0.1rem;
+    }
+    100%{
+      
+      bottom: 0.25rem;
+    }
+  } 
+  @-webkit-keyframes updown{
+    0%{
+      bottom: 0.1rem;
+    }
+    100%{
+      
+      bottom: 0.25rem;
+    }
+  } 
+  @-o-keyframes updown{
+    0%{
+      bottom: 0.1rem;
+    }
+    100%{
+      
+      bottom: 0.25rem;
+    }
+  } 
+    </style>
+<body>
+	 <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide Slide1"><img src="image/con1.jpg"><i class="con-btn arrowdown"></i></div>
+            <div class="swiper-slide Slide2"><img src="image/con2.jpg"><i class="con-btn arrowdown"></i></div>
+            <div class="swiper-slide Slide3"><img src="image/con3.jpg"><i class="con-btn arrowdown"></i></div>
+            <div class="swiper-slide Slide4"><img src="image/con4.jpg"><i class="con-btn arrowdown"></i></div>
+            <div class="swiper-slide Slide5"><h2>
+            	<img src="image/con5-h2.png"></h2>
+            	<p class="con5-p1">
+            	1、大礼包中包括：50元代金券*2、100元代金券*1；<br>
+            	2、代金券有效期：领取后7日内使用，过期作废；<br>
+            	3、代金券使用比例：默认为1：50，即投资1000元可使用20元代金券；<br>
+            	4、代金券在玖财通账户中可查看，投资后可转化为可用余额进行提现；<br>
+            	5、本活动规则归玖财通所有；</p>
+				<img class="erweima" src="image/erweima.png">
+				<p class="con5-p2">市场有风险，投资需谨慎</p>
+				<i class="con-btn arrowtop" id="return-top">返回顶部</i>
+            </div>
+        </div>
+    </div>
+     <!-- Swiper JS -->
+    <script src="js/swiper.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+    	nextButton:".arrowdown",
+        paginationClickable: true,
+        direction: 'vertical'
+    });
+    document.getElementById("return-top").onclick=function(){
+         swiper.slideTo(0, 100, false);
+     }
+    </script>
+</body>
+</html>
