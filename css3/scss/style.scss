@@ -234,7 +234,6 @@ ul li a{text-decoration: none; color:#fff;  width:150px; text-align:center; disp
     75%{@include transform-scale(0.5); opacity:0.5;}
     100%{@include transform-scale(1); opacity:0;}
 }
-
 .dhz{ position:relative; width: 130px; height: 130px; background:url(../image/bike.png) 0 0px no-repeat; @include animation(bike 3s steps(32) infinite);}
  @keyframes bike{
  	0%{background-position:0 0}
