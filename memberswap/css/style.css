@@ -190,7 +190,7 @@ header h1{ font-size: 0.36rem; color: #fff;line-height: 0.85rem; text-align: cen
 #details-ul a{ display: block;float: left; margin-left: 1rem; width: 1.35rem; height: 0.6rem; line-height: 0.6rem; text-align: center; font-size: 0.28rem; border-radius: 3px; margin-top: 0.1rem;}
 #details-ul a.details-li-a1{ color: #5263de; border:1px solid #5263de;}
 #details-ul a.details-li-a2{ color: #fff; background:#5263de;}
-#details-ul li i.details-ico1{position: absolute;left: 1.3rem;top: -0.1rem; width: 0.4rem; height: 0.4rem; background: url(../image/datails-ico1.png) no-repeat; background-size: 0.4rem 0.4rem;}
+#details-ul li i.details-ico1{position: absolute;left: 1.3rem;top: -0.1rem; width: 0.44rem; height: 0.4rem; background: url(../image/datails-ico1.png) no-repeat; background-size: 0.41rem 0.4rem;}
 #details-ul li i#ico-left{ left: 2.2rem;}
 #details-ul li i#ico-left1{ left: 2rem;}
 
