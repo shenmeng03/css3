@@ -65,7 +65,7 @@ header h1{ font-size: 0.36rem; color: #fff;line-height: 0.85rem; text-align: cen
 
 /*会员特权*/
 .privilege-ul{ margin-top: 1rem;}
-.privilege-ul li{  width: 1.63rem; float: left; margin-bottom: 0.4rem;}
+.privilege-ul li{  width: 1.6rem; float: left; margin-bottom: 0.4rem;}
 .privilege-ul span{ display:block; font-size: 0.24rem; color: #666666; text-align: center; line-height: 180%; }
 
 .priviege-con .swiper-container {width: 100%; padding: 0.8rem 0; }
