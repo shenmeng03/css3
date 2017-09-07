@@ -1,0 +1,91 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<title>微信游戏页面</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/resize.js"></script>
+<script src="js/phone.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+<style>
+html{ width:100%; height:100%; overflow:hidden;}
+</style>
+</head>
+<body>
+	<img src="images/game_bg1.jpg" id="game_bg1">
+    <div id="game-main">
+    	<p id="score_p" class="game-p2"><span id="score">0.00</span>元</p>
+        <p id="game_time" class="game-p2">8秒</p>
+        <a class="game-hb" id="game-hb"></a>
+        <div id="game-hb-con">
+	        <img src="images/hongbao.png" class="game-hbimg" id="game-hbimg" style=" top:850px;">        
+    	</div>
+        <div id="game-con1">
+        	<p class="game-score" id="game-score">+0.25元</p>
+            <img src="images/xiaoguo7.png" class="xiaoguo7" id="baoji1">
+            <img src="images/xiaoguo8.png" class="xiaoguo8" id="baoji2">
+            <img src="images/xiaoguo7.png" class="xiaoguo7" id="baoji3">
+            <img src="images/xiaoguo8.png" class="xiaoguo8" id="baoji4">
+        </div>
+        <img src="images/game_bg.jpg" class="game_bg">
+    </div><!-----game---->
+    <div id="game_pop_bg"></div>
+    <div id="game_pop_bg1"></div>
+    <div id="game-pop-con">
+    	<div class="game-time">
+        	<img src="images/time3.png" class="time1" id="time_img">
+        </div>
+        <div id="game-show1">
+        	<h3 class="game-show-h3">最高金额纪录：5.53元</h3>
+            <p class="game-show-p1" id="recoed">本次成绩：22个红包，共4.23元</p>
+            <a class="game-show-a1" id="agin_game">再来一次</a>
+            <a class="game-show-a2">不玩了&nbsp;领取红包</a>
+            <p class="game-show-p2">红包金额按照最高记录标准发放。</p>
+            <a class="game-show-a3" href="lqxj.html">&lt;&lt;送现金&nbsp;有惊喜</a>
+            <a class="game-show-a4" href="paihangbang.html">看排行&nbsp;领现金&gt;&gt;</a>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <script>
+		var time1=3;
+		var time2=8;
+		var idEnd=false;
+		var stime2;
+    	function time(){
+			if(time1>1){				
+				time1=time1-1;
+				document.getElementById('time_img').setAttribute('src','images/time'+time1+".png");
+			}else{
+				document.getElementById('game-main').style.display='block';
+				document.getElementById('game_bg1').style.display='none';
+				document.getElementById('time_img').style.display="none";
+				clearInterval(stime1);
+				stime2=setInterval(game_time,1000);
+			}
+		}
+		var stime1=setInterval(time,1000);//三秒倒计时
+		function game_time(){//8秒倒计时
+			if(time2>0){				
+				time2=time2-1;
+				document.getElementById('game_time').innerHTML=time2+"秒";
+			}else{
+				clearInterval(stime2);
+				end_show();
+				isEnd=true;
+			}
+		}
+		var agin=document.getElementById('agin_game');
+		
+		agin.onclick=function(){//再玩一次
+			time2=8;
+			document.getElementById('game_time').innerHTML=time2+"秒";
+			stime2=setInterval(game_time,1000);
+			hidden();
+		}    
+		var ele=document.getElementById("game-hb");
+		WSP.swipe(ele);
+    </script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<title>确认领取红包</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/resize.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="hongbao-main">
+    	<img src="images/lingqu1.png" class="hongbao-line">
+    	<div class="hongbao-con">
+            <h3 class="hongbao-h3">领取红包规则说明</h3>
+            <ul class="hongbao-ul">
+            	<li><span>1.</span><p>参与本次活动的用户均可以最高金额领取红包，红包会以等值代金券的形式发放到您的玖信贷账户中；参与本次活动的用户还可以根据邀请任务完成情况领取现金，现金将发放到您的账户中，可随时提现。因此，用户领取相应的活动奖励需注册或登陆玖信贷账号。</p><div class="clear"></div></li>
+                <li><span>2.</span><p>如果您之前未注册过玖信贷账户，需勾选左侧“注册领取”，点击“确定”进入指定页面完成账号注册；如果您已经注册过玖信贷账户，需勾选右侧“登陆领取”，点击“确定”进入指定页面完成账号登陆。红包金额将发放到玖信贷账户中。</p><div class="clear"></div></li>
+            </ul>
+        </div>
+        <img src="images/lingqu2.png" class="hongbao-line">
+        <ul class="hongbao-ul1">
+        	<li><p class="hongbao-p">注册领取</p><a class="hongbao-checked" id="hongbao-check"></a><div class="clear"></div></li>
+            <li><p class="hongbao-p">登陆领取</p><a class="hongbao-checked" id="hongbao-uncheck"></a><div class="clear"></div></li>
+        </ul>
+        <div class="clear"></div>
+        <a class="hongbao-a1">确定</a>
+        <p class="hongbao-p1">领取红包后还可以参与<a>&gt;&gt;送现金 有惊喜</a></p>
+    </div>
+    <script>
+    	$('.hongbao-checked').each(function(index, element) {
+            $(this).click(function(){
+				
+				if($(this).attr('id')!="hongbao-check"){
+					$('.hongbao-ul1').find('.hongbao-checked:not('+index+')').attr('id','hongbao-uncheck');
+					$(this).attr('id',"hongbao-check");
+					
+				}
+			});
+        });
+    </script>
+</body>
+</html>

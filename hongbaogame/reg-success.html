@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="format-detection" content="telephone=no">
+<title>领取现金页面提示页</title>
+<script src="js/jquery.min.js"></script>
+<script src="js/resize.js"></script>
+<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+	<div class="hongbao-main">
+    	<div class="djq-con">       
+          <img src="images/guize1.png" class="djq-img"> 
+          <div class="djq-con1" style="padding-bottom:0.5rem;">
+              <p class="djq-p1" style="text-indent:1em;">您已成功注册（登陆）玖信贷账号，现在就可以领取代金券啦！戳中下方“确认领取“按钮，代金券即刻到账。</p>
+              <p class="djq-p1" style="text-indent:1em; padding-bottom:1rem;">领取代金券只有一次机会哦，领完就没啦，不过不要紧，我们还有现金和神秘大礼等着你！</p>
+              <a class="xianjin-a1" id="pop_a">确认领取</a>
+              <a class="xianjin-a2">送现金有惊喜</a>
+              <div class="clear"></div>
+          </div>
+        </div>
+    </div>
+    <div id="reg_pop_bg"></div>
+    <div id="reg-pop-con">
+    	<a class="close-pop"><img src="images/reg-close.png"></a>
+    	<p class="reg-p">您已领取<span>20</span>元代金券，请及时进入账户的个人中心查看。邀请好友来参与活动还可送现金哦。</p>
+    </div>
+    <script>
+    	$('#pop_a').click(function(){
+			$('#reg_pop_bg').fadeIn('slow');
+			$('#reg-pop-con').fadeIn('slow');
+		});
+		$('.close-pop').click(function(){
+			$('#reg_pop_bg').fadeOut('slow');
+			$('#reg-pop-con').fadeOut('slow');
+		});
+    </script>
+</body>
+</html>
