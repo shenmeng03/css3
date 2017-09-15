@@ -49,14 +49,18 @@ ul,ul li{ list-style:none; margin:0;  padding:0;}
 .active-time a.miss{margin-left: 0.05rem; width: 0.48rem; height: 0.64rem; color: #fff; }
 .active-time a.select{ background:url(../images/con1-ico1.jpg) center 0.05rem no-repeat;background-size: 0.55rem 0.55rem; }
 .active-time a i{ position: absolute;}
-.active-time a span.active-date{
-  z-index: 2; position: absolute; top: 0; left: 0; display: inline-block; width: 0.38rem;}
-.active-time a span.miss_s{animation: miss_zoom 1s linear infinite;
+.active-time a span.active-date{  z-index: 2; position: absolute; top: 0; left: 0; display: inline-block; width: 0.4rem;}
+
+.active-time a.miss span.miss_s{animation: miss_zoom 1s linear infinite;
   -webkit-animation: miss_zoom 1s linear infinite;
- position: absolute; top:0.015rem; left: -0.05rem; z-index: 0; background:url(../images/con1-ico2.png) -0.03rem 0rem no-repeat; background-size: 0.59rem 0.64rem;display: inline-block; width: 0.59rem; height: 0.64rem; }
-.active-time a i.miss_i{animation: miss_zoom 1s 0.5s linear infinite;
+ position: absolute; top:0.015rem; left: -0.05rem; z-index: 0; 
+ background:url(../images/con1-ico2.png) -0.03rem 0rem no-repeat; 
+ background-size: 0.59rem 0.64rem;display: inline-block; width: 0.59rem; height: 0.64rem; }
+ 
+.active-time a.miss i.miss_i{animation: miss_zoom 1s 0.5s linear infinite;
   -webkit-animation: miss_zoom 1s 0.5s linear infinite;
-  z-index: 1; position: absolute; top:0.08rem; right: 0; background:url(../images/con1-ico3.png) no-repeat; background-size: 0.1rem 0.21rem; display: inline-block; width: 0.1rem; height: 0.21rem;}
+  z-index: 1; position: absolute; top:0.08rem; right: 0; background:url(../images/con1-ico3.png) no-repeat;
+   background-size: 0.1rem 0.21rem; display: inline-block; width: 0.1rem; height: 0.21rem;}
 
 @keyframes miss_zoom
 {

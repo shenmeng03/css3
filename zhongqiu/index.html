@@ -67,17 +67,17 @@
                     </li>
                 </ul>
                 <div class="active-time">
-                    <a href="javascript:;"><span class="active-date">29</span></a>
-                    <a href="javascript:;"><span class="active-date">30</span></a>
-                    <a href="javascript:;"><span class="active-date">1</span></a>
-                    <a href="javascript:;"><span class="active-date">2</span></a>
-                    <a href="javascript:;"><span class="active-date">3</span></a>
-                    <a href="javascript:;"><span class="active-date">4</span></a>
-                    <a href="javascript:;"><span class="active-date">5</span></a>
-                    <a href="javascript:;"><span class="active-date">6</span></a>
-                    <a href="javascript:;"><span class="active-date">7</span></a>
-                    <a href="javascript:;"><span class="active-date">8</span></a>
-                    <a href="javascript:;"><span class="active-date">9</span></a>
+                    <a href="javascript:;"><span class="active-date">29</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">30</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">1</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">2</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">3</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">4</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">5</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">6</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">7</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">8</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">9</span><i class="miss_i"></i><span class="miss_s"></span></a>
                 </div>
             </div>
         </div>
@@ -182,8 +182,8 @@ function time(){
         time1=time1-1;
     }else{
         clearInterval(stime1);
-        $('.pop-bg').fadeOut('slow');
-        $('.pop-con1').fadeOut('slow');
+        $('.pop-bg').css('display', 'none');
+        $('.pop-con1').css('display', 'none');
     }
 }
 
@@ -197,9 +197,9 @@ $('.con1-a').click(function(event) {
         pop_fixed($('.pop-con1'));
         scrollWindow($('.pop-con1'));
         $('.pop-con1').find('p').html("您当前没有漏签!");
-        $('.pop-con').fadeOut('slow');
-        $('.pop-con1').fadeIn('slow');
-        $('.pop-bg').fadeIn('slow');
+        $('.pop-con').css('display', 'none');
+        $('.pop-con1').css('display', 'block');
+        $('.pop-bg').css('display', 'block');
         time1=3;
         stime1=setInterval(time,1000);//三秒倒计时
     }   
@@ -217,10 +217,10 @@ $('.share').click(function(event) {
         time1=3;
         stime1=setInterval(time,1000);//三秒倒计时
         $('.pop-con1').find('p').html("您已成功分享，补签成功！");
-        $('.pop-con').fadeOut('slow');
+        $('.pop-con').css('display', 'none');
         pop_fixed($('.pop-con1'));
         scrollWindow($('.pop-con1'));
-        $('.pop-con1').fadeIn('slow');
+        $('.pop-con1').css('display', 'block');
         sign_in();
     }    
 });
@@ -230,8 +230,8 @@ function show_pop(){
     // 重点就是下面这一条语句的实现       
     pop_fixed($('.pop-con'));
     scrollWindow($('.pop-con'));
-    $('.pop-bg').fadeIn('slow');
-    $('.pop-con').fadeIn('slow');
+    $('.pop-bg').css('display', 'block');
+    $('.pop-con').css('display', 'block');
 }
 
 function scrollWindow(scroll_obj){
@@ -252,8 +252,8 @@ function pop_fixed(obj){
 
 }
 function hiden_pop(){
-    $('.pop-bg').fadeOut('slow');
-    $('.pop-con').fadeOut('slow');
+    $('.pop-bg').css('display', 'none');
+    $('.pop-con').css('display', 'none');
 }
 
 /*补签*/
@@ -269,9 +269,7 @@ function sign_in(){
     }
     var miss_num=$('.miss_span').html();
     $('.miss_span').html(parseInt(miss_num)-1);
-    obj.removeClass('miss');
-    obj.find('.miss_i').remove(); 
-    obj.find('.miss_s').remove();      
+    obj.removeClass('miss');   
     obj.addClass('select');  
     obj_class=$('.con2-gray-img'+class_num);
     obj_class.addClass('con2-img'+class_num);
@@ -290,15 +288,13 @@ function sign(nowdate){
             }
         }else{
             if(index<nowdate.length){
-                if(nowdate[index]){
-                    console.log("323232");
+                if(nowdate[index]){                   
                     $(this).addClass('select');
                     img_class=$('.con2-gray-img'+(index+1)).addClass('con2-img'+(index+1));
                     img_class.removeClass('con2-gray-img'+(index+1));
                 }else{
                     
-                    $(this).addClass('miss');
-                    $(this).append('<i class="miss_i"></i><span class="miss_s"></span>');
+                    $(this).addClass('miss');                   
                     $(this).click(function(event) {
                         /* Act on the event */
                         show_pop();
