@@ -167,7 +167,8 @@ $(document).ready(function(){
     }else{
        //var myDate=new data();
        //myDate.getDate();获取当前日期  
-        pop_fixed($('.pop-con'));     
+        pop_fixed($('.pop-con'));
+        scrollWindow($('.pop-con1'));     
         $('.pop-bg').css('display', 'block');
         $('.pop-con1').css('display', 'block');         
         stime1=setInterval(time,1000);//三秒倒计时   
@@ -194,6 +195,7 @@ $('.con1-a').click(function(event) {
         show_pop();
     }else{
         pop_fixed($('.pop-con1'));
+        scrollWindow($('.pop-con1'));
         $('.pop-con1').find('p').html("您当前没有漏签!");
         $('.pop-con').fadeOut('slow');
         $('.pop-con1').fadeIn('slow');
@@ -217,6 +219,7 @@ $('.share').click(function(event) {
         $('.pop-con1').find('p').html("您已成功分享，补签成功！");
         $('.pop-con').fadeOut('slow');
         pop_fixed($('.pop-con1'));
+        scrollWindow($('.pop-con1'));
         $('.pop-con1').fadeIn('slow');
         sign_in();
     }    
@@ -226,9 +229,18 @@ $('.share').click(function(event) {
 function show_pop(){    
     // 重点就是下面这一条语句的实现       
     pop_fixed($('.pop-con'));
+    scrollWindow($('.pop-con'));
     $('.pop-bg').fadeIn('slow');
     $('.pop-con').fadeIn('slow');
 }
+
+function scrollWindow(scroll_obj){
+    $(window).scroll(function(event) {
+        /* Act on the event */
+        pop_fixed(scroll_obj);
+    });
+}
+
 function pop_fixed(obj){
     console.log(window.innerHeight);
     var top=(window.innerHeight-obj.innerHeight())/2+ window.scrollY;
