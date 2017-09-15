@@ -6,7 +6,7 @@
 <meta content="yes" name="apple-mobile-web-app-capable">     
 <meta content="black" name="apple-mobile-web-app-status-bar-style">     
 <meta content="telephone=no" name="format-detection">  
-<title>会员中心</title>
+<title>十一中秋提钱放假</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
 <script type="text/javascript" src="js/resize.js"></script>
 </head>
@@ -149,7 +149,7 @@
         </ul>
     </div>     
     <div class="pop-con1">
-        <p class="pop-p1">今日签到成功！打开页面即可完成当日签到哦~</p>        
+        <p class="pop-p1">今日签到成功！打开页面即可完成当日签到哦~</p>    
     </div>     
 </body>
 </html>
@@ -166,7 +166,8 @@ $(document).ready(function(){
         sign(mysign);          
     }else{
        //var myDate=new data();
-       //myDate.getDate();获取当前日期       
+       //myDate.getDate();获取当前日期  
+        pop_fixed($('.pop-con'));     
         $('.pop-bg').css('display', 'block');
         $('.pop-con1').css('display', 'block');         
         stime1=setInterval(time,1000);//三秒倒计时   
@@ -192,6 +193,7 @@ $('.con1-a').click(function(event) {
     if(parseInt($('.miss_span').html())!=0){
         show_pop();
     }else{
+        pop_fixed($('.pop-con1'));
         $('.pop-con1').find('p').html("您当前没有漏签!");
         $('.pop-con').fadeOut('slow');
         $('.pop-con1').fadeIn('slow');
@@ -214,15 +216,23 @@ $('.share').click(function(event) {
         stime1=setInterval(time,1000);//三秒倒计时
         $('.pop-con1').find('p').html("您已成功分享，补签成功！");
         $('.pop-con').fadeOut('slow');
+        pop_fixed($('.pop-con1'));
         $('.pop-con1').fadeIn('slow');
         sign_in();
     }    
 });
-function show_pop(){
+
+
+function show_pop(){    
+    // 重点就是下面这一条语句的实现       
+    pop_fixed($('.pop-con'));
     $('.pop-bg').fadeIn('slow');
     $('.pop-con').fadeIn('slow');
 }
-
+function pop_fixed(obj){
+    var top=(window.innerHeight + window.scrollY)*window.innerWidth/750;
+    obj.css({top:parseInt(top)});   
+}
 function hiden_pop(){
     $('.pop-bg').fadeOut('slow');
     $('.pop-con').fadeOut('slow');
