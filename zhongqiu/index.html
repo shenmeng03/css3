@@ -67,17 +67,17 @@
                     </li>
                 </ul>
                 <div class="active-time">
-                    <a href="javascript:;">29</a>
-                    <a href="javascript:;">30</a>
-                    <a href="javascript:;">1</a>
-                    <a href="javascript:;">2</a>
-                    <a href="javascript:;">3</a>
-                    <a href="javascript:;">4</a>
-                    <a href="javascript:;">5</a>
-                    <a href="javascript:;">6</a>
-                    <a href="javascript:;">7</a>
-                    <a href="javascript:;">8</a>
-                    <a href="javascript:;">9</a>
+                    <a href="javascript:;"><span class="active-date">29</span></a>
+                    <a href="javascript:;"><span class="active-date">30</span></a>
+                    <a href="javascript:;"><span class="active-date">1</span></a>
+                    <a href="javascript:;"><span class="active-date">2</span></a>
+                    <a href="javascript:;"><span class="active-date">3</span></a>
+                    <a href="javascript:;"><span class="active-date">4</span></a>
+                    <a href="javascript:;"><span class="active-date">5</span></a>
+                    <a href="javascript:;"><span class="active-date">6</span></a>
+                    <a href="javascript:;"><span class="active-date">7</span></a>
+                    <a href="javascript:;"><span class="active-date">8</span></a>
+                    <a href="javascript:;"><span class="active-date">9</span></a>
                 </div>
             </div>
         </div>
@@ -230,8 +230,14 @@ function show_pop(){
     $('.pop-con').fadeIn('slow');
 }
 function pop_fixed(obj){
-    var top=(window.innerHeight + window.scrollY)*window.innerWidth/750;
-    obj.css({top:parseInt(top)});   
+    console.log(window.innerHeight);
+    var top=(window.innerHeight-obj.innerHeight())/2+ window.scrollY;
+    var margin_left=parseInt(obj.innerWidth()/2);    
+    obj.css({
+        top: parseInt(top),
+        'margin-left': '-'+margin_left+'px'
+    }); 
+
 }
 function hiden_pop(){
     $('.pop-bg').fadeOut('slow');
@@ -245,14 +251,15 @@ function sign_in(){
     for(var i=0;i<mysign.length;i++){
         if(mysign[i]==0){
             class_num=i+1;
-            mysign[i]=1;
-           
+            mysign[i]=1;           
             break;            
         }
     }
     var miss_num=$('.miss_span').html();
     $('.miss_span').html(parseInt(miss_num)-1);
     obj.removeClass('miss');
+    obj.find('.miss_i').remove(); 
+    obj.find('.miss_s').remove();      
     obj.addClass('select');  
     obj_class=$('.con2-gray-img'+class_num);
     obj_class.addClass('con2-img'+class_num);
@@ -272,11 +279,14 @@ function sign(nowdate){
         }else{
             if(index<nowdate.length){
                 if(nowdate[index]){
+                    console.log("323232");
                     $(this).addClass('select');
                     img_class=$('.con2-gray-img'+(index+1)).addClass('con2-img'+(index+1));
                     img_class.removeClass('con2-gray-img'+(index+1));
                 }else{
+                    
                     $(this).addClass('miss');
+                    $(this).append('<i class="miss_i"></i><span class="miss_s"></span>');
                     $(this).click(function(event) {
                         /* Act on the event */
                         show_pop();
