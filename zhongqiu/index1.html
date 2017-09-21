@@ -199,6 +199,10 @@ function time(){
 /*点击漏签按钮*/
 $('.con1-a').click(function(event) {
     /* Act on the event */
+    layer.open({
+    content: '移动版和PC版不能同时存在同一页面'
+    ,btn: '我知道了'
+  });
     if(parseInt($('.miss_span').html())!=0){
         pop_fixed($('.pop-con2'));
         scrollWindow($('.pop-con2'));
@@ -285,10 +289,7 @@ function hiden_pop(){
 
 /*补签*/
 function sign_in(){
-    layer.open({
-    content: '移动版和PC版不能同时存在同一页面'
-    ,btn: '我知道了'
-  });
+    
     var obj=$('.active-time').find('.miss').first();
     var obj_class,class_num;
     for(var i=0;i<mysign.length;i++){
