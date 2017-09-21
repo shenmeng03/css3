@@ -8,9 +8,12 @@
 <meta content="telephone=no" name="format-detection">  
 <title>十一中秋提钱放假</title>
 <link rel="stylesheet" type="text/css" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="js/need/layer.css" />
 <script type="text/javascript" src="js/resize.js"></script>
+<script type="text/javascript" src="js/layer.js"></script>
 </head>
 <body>
+
 	<div class="banner"></div>
     <div class="con-warp">
         <div class="con1">
@@ -67,17 +70,17 @@
                     </li>
                 </ul>
                 <div class="active-time">
-                    <a href="javascript:;"><span class="active-date">29</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">30</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">1</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">2</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">3</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">4</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">5</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">6</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">7</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">8</span><i class="miss_i"></i><span class="miss_s"></span></a>
-                    <a href="javascript:;"><span class="active-date">9</span><i class="miss_i"></i><span class="miss_s"></span></a>
+                    <a href="javascript:;"><span class="active-date">29</span></a>
+                    <a href="javascript:;"><span class="active-date">30</span></a>
+                    <a href="javascript:;"><span class="active-date">1</span></a>
+                    <a href="javascript:;"><span class="active-date">2</span></a>
+                    <a href="javascript:;"><span class="active-date">3</span></a>
+                    <a href="javascript:;"><span class="active-date">4</span></a>
+                    <a href="javascript:;"><span class="active-date">5</span></a>
+                    <a href="javascript:;"><span class="active-date">6</span></a>
+                    <a href="javascript:;"><span class="active-date">7</span></a>
+                    <a href="javascript:;"><span class="active-date">8</span></a>
+                    <a href="javascript:;"><span class="active-date">9</span></a>
                 </div>
             </div>
         </div>
@@ -150,6 +153,10 @@
     </div>     
     <div class="pop-con1">
         <p class="pop-p1">今日签到成功！打开页面即可完成当日签到哦~</p>    
+    </div>   
+    <div class="pop-con2">
+        <p>今日签到成功！打开页面即可完成当日签到哦~</p> 
+        <a href="javascript:;" class="pop-con2-a">确定</a>   
     </div>     
 </body>
 </html>
@@ -162,15 +169,16 @@ var stime1;/*定时器*/
 var mysign=[0,0,1];
 $(document).ready(function(){
     sign(mysign);
-    if(is_sign){        
+    if(is_sign){  
         sign(mysign);          
     }else{
        //var myDate=new data();
        //myDate.getDate();获取当前日期  
-        pop_fixed($('.pop-con'));
-        scrollWindow($('.pop-con1'));     
+           
         $('.pop-bg').css('display', 'block');
-        $('.pop-con1').css('display', 'block');         
+        $('.pop-con1').css('display', 'block'); 
+        pop_fixed($('.pop-con1'));
+        scrollWindow($('.pop-con1'));          
         stime1=setInterval(time,1000);//三秒倒计时   
         sign(2);
             
@@ -192,13 +200,21 @@ function time(){
 $('.con1-a').click(function(event) {
     /* Act on the event */
     if(parseInt($('.miss_span').html())!=0){
-        show_pop();
-    }else{
-        pop_fixed($('.pop-con1'));
-        scrollWindow($('.pop-con1'));
+        pop_fixed($('.pop-con2'));
+        scrollWindow($('.pop-con2'));
         $('.pop-con1').find('p').html("您当前没有漏签!");
         $('.pop-con').css('display', 'none');
-        $('.pop-con1').css('display', 'block');
+        $('.pop-con1').css('display', 'none');
+        $('.pop-con2').css('display', 'block');
+        $('.pop-bg').css('display', 'block');
+        
+    }else{
+        pop_fixed($('.pop-con2'));
+        scrollWindow($('.pop-con2'));
+        $('.pop-con1').find('p').html("您当前没有漏签!");
+        $('.pop-con').css('display', 'none');
+        $('.pop-con1').css('display', 'none');
+        $('.pop-con2').css('display', 'block');
         $('.pop-bg').css('display', 'block');
         time1=3;
         stime1=setInterval(time,1000);//三秒倒计时
@@ -225,6 +241,14 @@ $('.share').click(function(event) {
     }    
 });
 
+/*关闭浏览器弹窗窗口*/
+$('.pop-con2-a').click(function(event) {
+    /* Act on the event */
+    $('.pop-bg').css('display', 'none');
+    $('.pop-con').css('display', 'none');
+    $('.pop-con1').css('display', 'none');
+    $('.pop-con2').css('display', 'none');
+});
 
 function show_pop(){    
     // 重点就是下面这一条语句的实现       
@@ -242,9 +266,10 @@ function scrollWindow(scroll_obj){
 }
 
 function pop_fixed(obj){
-    console.log(window.innerHeight);
-    var top=(window.innerHeight-obj.innerHeight())/2+ window.scrollY;
+    console.log(window.scrollY);
+    var top=(document.body.clientHeight-obj.innerHeight())/2+ window.scrollY;
     var margin_left=parseInt(obj.innerWidth()/2);    
+    console.log(margin_left);
     obj.css({
         top: parseInt(top),
         'margin-left': '-'+margin_left+'px'
@@ -254,10 +279,16 @@ function pop_fixed(obj){
 function hiden_pop(){
     $('.pop-bg').css('display', 'none');
     $('.pop-con').css('display', 'none');
+ //   $('.pop-con1').css('display', 'none');
+   // $('.pop-con2').css('display', 'none');
 }
 
 /*补签*/
 function sign_in(){
+    layer.open({
+    content: '移动版和PC版不能同时存在同一页面'
+    ,btn: '我知道了'
+  });
     var obj=$('.active-time').find('.miss').first();
     var obj_class,class_num;
     for(var i=0;i<mysign.length;i++){
@@ -269,7 +300,9 @@ function sign_in(){
     }
     var miss_num=$('.miss_span').html();
     $('.miss_span').html(parseInt(miss_num)-1);
-    obj.removeClass('miss');   
+    obj.removeClass('miss');
+    obj.find('.miss_i').remove(); 
+    obj.find('.miss_s').remove();      
     obj.addClass('select');  
     obj_class=$('.con2-gray-img'+class_num);
     obj_class.addClass('con2-img'+class_num);
@@ -294,7 +327,8 @@ function sign(nowdate){
                     img_class.removeClass('con2-gray-img'+(index+1));
                 }else{
                     
-                    $(this).addClass('miss');                   
+                    $(this).addClass('miss');
+                    $(this).append('<i class="miss_i"></i><span class="miss_s"></span>');
                     $(this).click(function(event) {
                         /* Act on the event */
                         show_pop();
