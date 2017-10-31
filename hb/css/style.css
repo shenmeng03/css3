@@ -43,7 +43,7 @@ ul,ul li{ list-style:none; margin:0;  padding:0;}
 .con-ul li span.t-line{ line-height: 150%; position: absolute; left: 1rem; top: 0.5rem;}
 .con-ul li span i{ font-style: normal; font-size: 0.24rem; color: #90a2ad; }
 
-.con-ul li a{ position: absolute; right: 0.3rem; top: 0.5rem; display: inline-block; width:1.3rem; height: 0.6rem;line-height: 0.6rem; text-align: center; font-size: 0.28rem; border-radius: 0.12rem; }
+.con-ul li a{ position: absolute; right: 0.3rem; top: 0.5rem; display: block; width:1.3rem; height: 0.6rem;line-height: 0.6rem; text-align: center; font-size: 0.28rem; border-radius: 0.12rem; }
 .con-ul li a.blue{ border:1px solid #4870de; color: #4870de;}
 .con-ul li a.gray{ background: #d9d9d9; color: #fff;}
 .con-ul li.mum-li{ height: 2.4rem; line-height: 2.4rem;}
