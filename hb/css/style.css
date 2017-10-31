@@ -36,17 +36,18 @@ ul,ul li{ list-style:none; margin:0;  padding:0;}
 .con-bg{padding-left: 0.3rem; background: #fff; margin-bottom: 0.25rem;} 
 .con-ul li{ border-bottom: 1px solid #eaeef0; height: 1.7rem; position: relative;}
 .con-ul li:last-child{border: none;}
-.con-ul li img{ width: 0.75rem;vertical-align: middle;}
-.con-ul li span{ font-size: 0.28rem; color: #13334d; vertical-align: middle;}
-.con-ul li span.add-span{ position: absolute; right: 1.9rem; top: 0.6rem;}
+.con-ul li img{ width: 0.75rem;position: absolute;top: 0.45rem;}
+.con-ul li span{font-size: 0.28rem; color: #13334d;position: absolute;}
+.con-ul li span.span-text{ top: 0.6rem;left: 1.2rem;}
+.con-ul li span.add-span{ right: 1.9rem; top: 0.6rem;}
 .con-ul li span.t-line{ line-height: 150%; position: absolute; left: 1rem; top: 0.5rem;}
 .con-ul li span i{ font-style: normal; font-size: 0.24rem; color: #90a2ad; }
 
-.con-ul li a{ position: absolute; right: 0.3rem; top: 0.5rem; display: inline-block; width:1.3rem; height: 0.6rem; border-radius: 0.12rem; line-height: 0.6rem; text-align: center; font-size: 0.28rem;}
+.con-ul li a{ position: absolute; right: 0.3rem; top: 0.5rem; display: inline-block; width:1.3rem; height: 0.6rem;line-height: 0.6rem; text-align: center; font-size: 0.28rem; border-radius: 0.12rem; }
 .con-ul li a.blue{ border:1px solid #4870de; color: #4870de;}
 .con-ul li a.gray{ background: #d9d9d9; color: #fff;}
 .con-ul li.mum-li{ height: 2.4rem; line-height: 2.4rem;}
-.con-ul li.mum-li p{ line-height: 2.4rem;height: 2.4rem;}
+.con-ul li.mum-li img{ top: .75rem;}
 .con-ul li span.mum-span{line-height: 200%; position: absolute; left: 1rem; top: 0.15rem;}
 .con-ul li span.mum-span i{ line-height: 150%;}
 .con-ul li span.m-span{ position: absolute; right: 1.9rem; top: 0.75rem; line-height: 120%;color: #90a2ad;}
