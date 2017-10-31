@@ -1,0 +1,55 @@
+html,body{
+    color:#000;
+    background:#FFF;
+    font-family: "Microsoft Yahei";  
+    font-style: 14px;
+    width: 100%;
+    height: 100%;
+}
+img{ margin: 0; padding: 0; width: 100%; height: auto;}
+a{text-decoration: none;color: #666666; cursor: pointer;}
+body,div,dl,dt,dd,ul,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{
+    margin:0;
+    padding:0;
+}
+h1,h2,h3,h4,h5,h6{ font-weight: normal;}
+ul{
+     list-style:none;
+    }
+q:before,q:after{
+    content:'';
+}
+input,textarea,select{
+   font-family:inherit;
+   font-size:inherit;
+   font-weight:inherit;
+   *font-size:100%;
+}
+ul,ul li{ list-style:none; margin:0;  padding:0;}
+::-moz-placeholder { color: #fff; }
+::-webkit-input-placeholder { color:#fff; }
+:-ms-input-placeholder { color:#fff; }
+
+.clear{ clear:both; width:0; height:0; overflow:hidden;}
+.banner{background: url(../images/hb-banner.jpg) no-repeat; height: 1.7rem; background-size: 100% 1.7rem;}
+.con-warp{background: #edf2f6; padding-bottom: 0.25rem;}
+.con-bg{padding-left: 0.3rem; background: #fff; margin-bottom: 0.25rem;} 
+.con-ul li{ border-bottom: 1px solid #eaeef0; height: 1.7rem; position: relative;}
+.con-ul li:last-child{border: none;}
+.con-ul li img{ width: 0.75rem;vertical-align: middle;}
+.con-ul li span{ font-size: 0.28rem; color: #13334d; vertical-align: middle;}
+.con-ul li span.add-span{ position: absolute; right: 1.9rem; top: 0.6rem;}
+.con-ul li span.t-line{ line-height: 150%; position: absolute; left: 1rem; top: 0.5rem;}
+.con-ul li span i{ font-style: normal; font-size: 0.24rem; color: #90a2ad; }
+
+.con-ul li a{ position: absolute; right: 0.3rem; top: 0.5rem; display: inline-block; width:1.3rem; height: 0.6rem; border-radius: 0.12rem; line-height: 0.6rem; text-align: center; font-size: 0.28rem;}
+.con-ul li a.blue{ border:1px solid #4870de; color: #4870de;}
+.con-ul li a.gray{ background: #d9d9d9; color: #fff;}
+.con-ul li.mum-li{ height: 2.4rem; line-height: 2.4rem;}
+.con-ul li.mum-li p{ line-height: 2.4rem;height: 2.4rem;}
+.con-ul li span.mum-span{line-height: 200%; position: absolute; left: 1rem; top: 0.15rem;}
+.con-ul li span.mum-span i{ line-height: 150%;}
+.con-ul li span.m-span{ position: absolute; right: 1.9rem; top: 0.75rem; line-height: 120%;color: #90a2ad;}
+.con-ul li span.m-span i{ color: #ff5e40;} 
+.con-ul li.mum-li a{ top: 0.8rem; }
+
