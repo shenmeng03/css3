@@ -155,41 +155,40 @@ var calUtil = {
       calUtil.init(signList);
     });
     //当天签到
-    $('.sign-a').off("click").click(function(event) {     
-      var ajax_url="";
-      var current = new Date();
-      var obj={"result":0,"signList":[{"signDay":"10"},{"signDay":"11"},{"signDay":"12"},{"signDay":"22"}]};
-      // $.ajax({
-      //   type:"post",
-      //   url:ajax_url,
-      //   dataType:"json",        
-      //   async:true,
-      //   success:function (obj) {
-                var rst=obj.result;
-                if(rst==1){
-                    layer.open({
-                        content: '今日已签到'
-                        ,skin: 'msg'
-                        ,time: 2 //2秒后自动关闭
-                    });  
-                }else{                    
-                    var jifen=$(".sign-text1").find('span').html();
-                    console.log(jifen);
-                    $(".sign-text1").find('span').html(parseInt(jifen)+3);
-                    $('.sign-text').html("今天已签到");
-                    var signList=obj.signList;                    
-                    calUtil.init(signList);                    
-                    layer.open({
-                        content: '签到成功'
-                        ,skin: 'msg'
-                        ,time: 2 //2秒后自动关闭
-                    });  
-                }
-     //        },
-     //    error:function (obj) {            
-     //          return false;
-     //    }
-     // });      
+    $('.sign-a').click(function(event) {
+      /* Act on the event */
+      //ajax获取日历json数据
+      var signList=[{"signDay":"10"},{"signDay":"11"},{"signDay":"12"},{"signDay":"13"}];
+      /*获取日期*/
+      var dateObj = new Date();
+      var nowDate=dateObj.getDate();
+      var ifHasSigned=false;
+      for ( var i in signList) {  
+          if (nowDate == signList[i].signDay) {  
+             ifHasSigned=true;
+          } else {  
+              continue;  
+          }  
+      }  
+      signList.push({"signDay":nowDate});
+      if(!ifHasSigned){  
+        var jifen=$(".sign-text1").find('span').html();
+        $(".sign-text1").find('span').html(parseInt(jifen)+3);
+        $('.sign-text').html("今天已签到");
+        calUtil.init(signList);
+        ifHasSigned=false;
+        layer.open({
+        content: '签到成功'
+        ,skin: 'msg'
+        ,time: 2 //2秒后自动关闭
+        });  
+      }else{
+        layer.open({
+        content: '今日已签到'
+        ,skin: 'msg'
+        ,time: 2 //2秒后自动关闭
+        });  
+      }
       
     });
   },
