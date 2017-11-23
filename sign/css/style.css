@@ -71,7 +71,8 @@ header h1{ font-size: 0.36rem; color: #fff;line-height: 1rem; text-align: center
 
  .pop-bg{ display: none; position: fixed; top: 0; left: 0; z-index: 100; background: rgba(0, 0, 0, 0.5); width: 100%; height: 100%;}
  .pop-con{ display: none; position: absolute; top: 0; left: 0; width: 100%; z-index: 200; }
- .gongxi{ width: 2.53rem; display: block; margin: 0 auto; padding-top: 2rem;}
- .pop-text{ text-align: center; color: #fff; font-size: 0.36rem; line-height: 1rem;}
- .pop-img{ width: 5rem; padding: 0.4rem 0 0 1.05rem;}
+ .gongxi{ position: fixed; top: 3rem; left: 50%; margin-left: -1.1rem; width: 2.53rem; display: block; }
+ .pop-text{ position: fixed;top: 3.8rem; left: 50%; margin-left: -50%; width: 100%; text-align: center; color: #fff; font-size: 0.36rem; line-height: 1rem;}
+ .pop-img{ position: fixed;top: 5rem; left: 50%; margin-left: -2.8rem; width: 5rem;}
  .pop-a{ display: block;position: fixed; left: 50%; margin-left: -1.62rem; bottom: 1.6rem; background: #4a6ede; border-radius: 5px; width: 3.25rem; height: 0.9rem; line-height: 0.9rem; text-align: center; color: #fff; font-size: 0.28rem;}
+ 
